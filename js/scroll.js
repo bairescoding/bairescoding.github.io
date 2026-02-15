@@ -28,22 +28,6 @@
     
     animatedElements.forEach(el => observer.observe(el));
     
-    // Timeline progress animation
-    const timelineLine = document.querySelector('.timeline-line');
-    const timelineProgress = document.querySelector('.timeline-progress');
-    
-    if (timelineLine && timelineProgress) {
-        const timelineObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    timelineProgress.style.height = '100%';
-                }
-            });
-        }, { threshold: 0.3 });
-        
-        timelineObserver.observe(timelineLine);
-    }
-    
     // Pixel items stagger animation
     const pixelItems = document.querySelectorAll('.pixel-item');
     
