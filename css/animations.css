@@ -154,18 +154,6 @@
   }
 }
 
-/* Scroll Indicator */
-@keyframes scrollWheel {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-}
-
 /* Utility Classes */
 .animate-fadeInUp {
   animation: fadeInUp 0.6s ease forwards;

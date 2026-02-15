@@ -167,17 +167,11 @@
   z-index: 1;
   text-align: center;
   max-width: 900px;
-}
-
-.hero-logo-container {
-  margin-bottom: var(--space-8);
-}
-
-.hero-logo {
-  width: 180px;
-  height: 180px;
-  margin: 0 auto;
-  animation: float 3s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
 }
 
 .hero-title {
@@ -215,47 +209,6 @@
   gap: var(--space-4);
   justify-content: center;
   flex-wrap: wrap;
-}
-
-/* Scroll Indicator */
-.scroll-indicator {
-  position: absolute;
-  bottom: var(--space-10);
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-2);
-  color: var(--text-tertiary);
-  animation: bounce 2s ease-in-out infinite;
-}
-
-.mouse {
-  width: 24px;
-  height: 40px;
-  border: 2px solid var(--text-tertiary);
-  border-radius: var(--radius-full);
-  position: relative;
-}
-
-.wheel {
-  width: 4px;
-  height: 8px;
-  background: var(--color-primary);
-  border-radius: var(--radius-full);
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: scrollWheel 1.5s ease-in-out infinite;
-}
-
-.scroll-text {
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
 }
 
 /* About Section */

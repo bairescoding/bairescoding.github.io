@@ -113,11 +113,6 @@
     padding: var(--space-16) var(--space-4);
   }
   
-  .hero-logo {
-    width: 140px;
-    height: 140px;
-  }
-  
   .hero-title {
     flex-direction: column;
     gap: 0;
@@ -211,11 +206,6 @@
     font-size: var(--text-xs);
   }
   
-  .hero-logo {
-    width: 120px;
-    height: 120px;
-  }
-  
   .pixel-item {
     font-size: 1.5rem;
   }
@@ -258,11 +248,6 @@
     --text-7xl: 2rem;
     --text-6xl: 1.75rem;
   }
-  
-  .hero-logo {
-    width: 100px;
-    height: 100px;
-  }
 }
 
 /* Touch devices */
@@ -283,7 +268,6 @@
 
 /* High DPI screens */
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .hero-logo,
   .logo-img {
     image-rendering: -webkit-optimize-contrast;
   }
@@ -291,8 +275,6 @@
 
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .hero-logo,
-  .scroll-indicator,
   .cursor,
   .cursor-blink,
   .location-dot {
@@ -308,7 +290,6 @@
 /* Print styles */
 @media print {
   .navbar,
-  .scroll-indicator,
   .particles-canvas,
   .back-to-top,
   .btn {
