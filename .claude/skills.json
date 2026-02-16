@@ -1,0 +1,174 @@
+{
+  "version": "1.0.0",
+  "description": "Configuración de skills del ecosistema skills.sh para BairesCoding",
+  "repository": "bairescoding/bairescoding.github.io",
+  "skills": [
+    {
+      "name": "web-design-guidelines",
+      "owner": "vercel-labs/agent-skills",
+      "installation": "npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines",
+      "description": "Review files for compliance with Web Interface Guidelines",
+      "agents": ["opencode", "claude-code", "github-copilot", "gemini-cli"],
+      "triggers": ["*.html", "*.css"],
+      "autoLoad": true,
+      "priority": 1
+    },
+    {
+      "name": "frontend-design",
+      "owner": "anthropics/skills",
+      "installation": "npx skills add https://github.com/anthropics/skills --skill frontend-design",
+      "description": "Creation of distinctive, production-grade frontend interfaces",
+      "agents": ["opencode", "claude-code", "github-copilot", "gemini-cli"],
+      "triggers": ["*.html", "*.css", "*.js"],
+      "autoLoad": true,
+      "priority": 2
+    },
+    {
+      "name": "audit-website",
+      "owner": "squirrelscan/skills",
+      "installation": "npx skills add https://github.com/squirrelscan/skills --skill audit-website",
+      "description": "Audit websites for SEO, technical, content, performance and security issues",
+      "agents": ["opencode", "claude-code", "cursor", "gemini-cli"],
+      "cli": "squirrel",
+      "autoLoad": false,
+      "priority": 3
+    },
+    {
+      "name": "seo-audit",
+      "owner": "coreyhaines31/marketingskills",
+      "installation": "npx skills add https://github.com/coreyhaines31/marketingskills --skill seo-audit",
+      "description": "Expert SEO audit to identify issues and provide actionable recommendations",
+      "agents": ["opencode", "claude-code", "github-copilot"],
+      "triggers": ["*.html"],
+      "autoLoad": true,
+      "priority": 4
+    },
+    {
+      "name": "responsive-design",
+      "owner": "wshobson/agents",
+      "installation": "npx skills add https://github.com/wshobson/agents --skill responsive-design",
+      "description": "Modern responsive design techniques for all screen sizes",
+      "agents": ["opencode", "claude-code", "gemini-cli"],
+      "triggers": ["*.css", "*.html"],
+      "autoLoad": true,
+      "priority": 5
+    },
+    {
+      "name": "accessibility-auditor",
+      "owner": "patricio0312rev/skills",
+      "installation": "npx skills add https://github.com/patricio0312rev/skills --skill accessibility-auditor",
+      "description": "Comprehensive accessibility auditing for WCAG compliance",
+      "agents": ["opencode", "claude-code", "github-copilot"],
+      "triggers": ["*.html", "*.css"],
+      "autoLoad": true,
+      "priority": 6
+    },
+    {
+      "name": "web-perf",
+      "owner": "cloudflare/skills",
+      "installation": "npx skills add https://github.com/cloudflare/skills --skill web-perf",
+      "description": "Web performance optimization and Core Web Vitals",
+      "agents": ["opencode", "claude-code", "github-copilot"],
+      "triggers": ["*.html", "*.css", "*.js"],
+      "autoLoad": true,
+      "priority": 7
+    },
+    {
+      "name": "changelog-writer",
+      "owner": "patricio0312rev/skills",
+      "installation": "npx skills add https://github.com/patricio0312rev/skills --skill changelog-writer",
+      "description": "Automated changelog generation from commits",
+      "agents": ["opencode", "claude-code"],
+      "triggers": ["CHANGELOG.md"],
+      "autoLoad": false,
+      "priority": 8
+    },
+    {
+      "name": "docs-starter-kit",
+      "owner": "patricio0312rev/skills",
+      "installation": "npx skills add https://github.com/patricio0312rev/skills --skill docs-starter-kit",
+      "description": "Documentation starter templates and best practices",
+      "agents": ["opencode", "claude-code"],
+      "triggers": ["*.md"],
+      "autoLoad": true,
+      "priority": 9
+    },
+    {
+      "name": "frontend-internationalization-best-practices",
+      "owner": "sergiodxa/agent-skills",
+      "installation": "npx skills add https://github.com/sergiodxa/agent-skills --skill frontend-internationalization-best-practices",
+      "description": "Best practices for frontend internationalization and i18n",
+      "agents": ["opencode", "claude-code", "github-copilot"],
+      "triggers": ["*.html", "*.js"],
+      "autoLoad": true,
+      "priority": 10
+    }
+  ],
+  "agents": {
+    "frontend-agent": {
+      "description": "Agente especializado en UI/UX, CSS y componentes frontend",
+      "skills": ["frontend-design", "web-design-guidelines", "responsive-design"],
+      "permissions": ["read", "write", "execute"],
+      "filePatterns": ["*.css", "*.html", "*.js"]
+    },
+    "a11y-agent": {
+      "description": "Agente especializado en accesibilidad web y WCAG compliance",
+      "skills": ["accessibility-auditor", "web-design-guidelines"],
+      "permissions": ["read", "audit", "suggest"],
+      "filePatterns": ["*.html", "*.css"]
+    },
+    "seo-agent": {
+      "description": "Agente especializado en SEO on-page y técnico",
+      "skills": ["seo-audit", "audit-website"],
+      "permissions": ["read", "audit", "suggest"],
+      "filePatterns": ["*.html", "robots.txt", "sitemap.xml"]
+    },
+    "performance-agent": {
+      "description": "Agente especializado en optimización de performance",
+      "skills": ["web-perf", "audit-website"],
+      "permissions": ["read", "audit", "suggest"],
+      "filePatterns": ["*.html", "*.css", "*.js", "img/*"]
+    },
+    "docs-agent": {
+      "description": "Agente especializado en documentación",
+      "skills": ["docs-starter-kit", "changelog-writer"],
+      "permissions": ["read", "write"],
+      "filePatterns": ["*.md", "README*", "CHANGELOG*"]
+    },
+    "i18n-agent": {
+      "description": "Agente especializado en internacionalización y multilingüismo",
+      "skills": ["frontend-internationalization-best-practices"],
+      "permissions": ["read", "write"],
+      "filePatterns": ["*.html", "*.js", "locales/*", "i18n/*"]
+    }
+  },
+  "routing": {
+    "byFileExtension": {
+      ".css": ["frontend-agent"],
+      ".html": ["frontend-agent", "seo-agent", "a11y-agent"],
+      ".js": ["frontend-agent", "performance-agent"],
+      ".md": ["docs-agent"]
+    },
+    "byPath": {
+      "img/": ["performance-agent"],
+      "css/": ["frontend-agent", "a11y-agent"],
+      "js/": ["frontend-agent", "performance-agent"],
+      "docs/": ["docs-agent"],
+      "locales/": ["i18n-agent"]
+    }
+  },
+  "settings": {
+    "autoLoadSkills": true,
+    "parallelAgents": 3,
+    "requireHumanReview": ["head-changes", "seo-critical", "accessibility-breaking"],
+    "auditThresholds": {
+      "healthScore": 85,
+      "wcagLevel": "AA",
+      "coreWebVitals": {
+        "LCP": 2.5,
+        "INP": 0.2,
+        "CLS": 0.1
+      }
+    }
+  }
+}
