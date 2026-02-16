@@ -73,12 +73,32 @@
             if (iconMoon) iconMoon.style.display = 'none';
             btn.setAttribute('aria-label', 'Cambiar a modo oscuro');
             btn.setAttribute('title', 'Cambiar a modo oscuro');
+            btn.setAttribute('aria-pressed', 'true');
         } else {
             if (iconSun) iconSun.style.display = 'none';
             if (iconMoon) iconMoon.style.display = 'block';
             btn.setAttribute('aria-label', 'Cambiar a modo claro');
             btn.setAttribute('title', 'Cambiar a modo claro');
+            btn.setAttribute('aria-pressed', 'false');
         }
+    }
+    
+    /**
+     * Anuncia cambio de tema a screen readers
+     */
+    function announceThemeChange(theme) {
+        const announcement = document.createElement('div');
+        announcement.setAttribute('role', 'status');
+        announcement.setAttribute('aria-live', 'polite');
+        announcement.className = 'sr-only';
+        announcement.textContent = theme === THEME_LIGHT ? 'Tema claro activado' : 'Tema oscuro activado';
+        document.body.appendChild(announcement);
+        
+        setTimeout(() => {
+            if (announcement.parentNode) {
+                document.body.removeChild(announcement);
+            }
+        }, 1000);
     }
     
     /**
@@ -90,6 +110,7 @@
         
         applyTheme(newTheme);
         saveTheme(newTheme);
+        announceThemeChange(newTheme);
     }
     
     /**
