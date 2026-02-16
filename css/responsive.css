@@ -180,9 +180,22 @@
   }
   
   .social-link {
-    flex: 1;
-    min-width: 140px;
+    flex: 0 0 auto;
+    min-width: auto;
+    width: 48px;
+    height: 48px;
+    padding: 0;
     justify-content: center;
+    border-radius: var(--radius-md);
+  }
+  
+  .social-link span {
+    display: none;
+  }
+  
+  .social-link svg {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -296,11 +309,8 @@
   }
   
   .social-links {
-    flex-direction: column;
-  }
-  
-  .social-link {
-    width: 100%;
+    flex-direction: row;
+    justify-content: center;
   }
   
   /* Modal Mobile */
