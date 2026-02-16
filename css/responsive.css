@@ -205,6 +205,10 @@
     margin-right: auto;
   }
   
+  .cta-feature {
+    justify-content: flex-start;
+  }
+  
   .btn-cta {
     width: 100%;
     max-width: 100%;
