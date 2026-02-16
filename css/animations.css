@@ -157,38 +157,91 @@
 /* Utility Classes */
 .animate-fadeInUp {
   animation: fadeInUp 0.6s ease forwards;
+  will-change: transform, opacity;
 }
 
 .animate-fadeIn {
   animation: fadeIn 0.6s ease forwards;
+  will-change: opacity;
 }
 
 .animate-scaleIn {
   animation: scaleIn 0.6s ease forwards;
+  will-change: transform, opacity;
 }
 
 .animate-slideInLeft {
   animation: slideInLeft 0.6s ease forwards;
+  will-change: transform, opacity;
 }
 
 .animate-slideInRight {
   animation: slideInRight 0.6s ease forwards;
+  will-change: transform, opacity;
 }
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
+  will-change: transform;
 }
 
 .animate-pulse {
   animation: pulse 2s ease-in-out infinite;
+  will-change: box-shadow;
 }
 
 .animate-glow {
   animation: glow 2s ease-in-out infinite;
+  will-change: box-shadow;
 }
 
 .animate-bounce {
   animation: bounce 2s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Contain layout for animated elements to improve paint performance */
+[data-aos] {
+  contain: layout style;
+}
+
+/* GPU acceleration for animated elements */
+.particles-canvas,
+.cursor-blink,
+.btn-glow,
+.btn-glow-large {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fadeInUp,
+  .animate-fadeIn,
+  .animate-scaleIn,
+  .animate-slideInLeft,
+  .animate-slideInRight {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    will-change: auto;
+  }
+  
+  .animate-float,
+  .animate-pulse,
+  .animate-glow,
+  .animate-bounce {
+    animation: none;
+    will-change: auto;
+  }
+  
+  [data-aos] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    will-change: auto;
+    contain: none;
+  }
 }
 
 /* Stagger delays */
