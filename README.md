@@ -14,7 +14,7 @@ Sitio web oficial de BairesCoding - Transformamos ideas en soluciones digitales 
 
 ## 📁 Estructura del Proyecto
 
-```
+```txt
 .
 ├── index.html              # Página principal
 ├── css/                    # Estilos CSS
@@ -64,6 +64,7 @@ Sitio web oficial de BairesCoding - Transformamos ideas en soluciones digitales 
 Este proyecto utiliza skills de [skills.sh](https://skills.sh) para mejorar la calidad del código y el flujo de trabajo:
 
 ### Core Skills
+
 - `web-design-guidelines` - Diseño web estático
 - `frontend-design` - Frontend best practices
 - `audit-website` - Auditoría SEO/Performance/A11y
@@ -71,11 +72,13 @@ Este proyecto utiliza skills de [skills.sh](https://skills.sh) para mejorar la c
 - `responsive-design` - Responsive design
 
 ### Documentación
+
 Ver [SKILLS.md](./SKILLS.md) para el catálogo completo.
 
 ## 🚀 Desarrollo
 
 ### Requisitos
+
 - Navegador moderno con soporte para ES6+
 - Servidor local para desarrollo (Live Server, http-server, etc.)
 
@@ -129,7 +132,7 @@ squirrel audit https://bairescoding.github.io --format llm --coverage quick
 ### Targets de Calidad
 
 | Métrica | Target | Estado |
-|---------|--------|--------|
+| ------- | ------ | ------ |
 | Health Score | > 85 | ⏳ Pendiente |
 | WCAG 2.1 AA | Pass | ✅ Implementado |
 | LCP | < 2.5s | ⏳ Pendiente |

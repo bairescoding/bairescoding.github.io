@@ -103,6 +103,7 @@ squirrel audit https://bairescoding.github.io --format llm --coverage surface --
 ```
 
 **Parámetros importantes:**
+
 - `--format llm`: Formato optimizado para agentes de IA
 - `--coverage`: quick (25 páginas) | surface (100 páginas) | full (500 páginas)
 - `--max-pages`: Límite de páginas a auditar
@@ -124,7 +125,7 @@ squirrel report --diff <audit-id> --format llm
 ### Targets de Calidad
 
 | Score | Grado | Acción |
-|-------|-------|--------|
+| ----- | ----- | ------ |
 | < 50 | F | Major fixes requeridos |
 | 50-70 | D | Moderate fixes |
 | 70-85 | C | Polish necesario |
@@ -141,14 +142,14 @@ squirrel report --diff <audit-id> --format llm
 
 Para usar un agente especializado, menciónalo con `@`:
 
-```
+```bash
 @frontend-agent Revisa los estilos CSS para mejorar la consistencia del tema oscuro
 ```
 
 ### Agentes Disponibles
 
 | Agente | Para qué usarlo | Ejemplo |
-|--------|----------------|---------|
+| ------ | -------------- | ------- |
 | `@frontend-agent` | UI/UX, CSS, HTML | Crear componentes, estilos responsive |
 | `@a11y-agent` | Accesibilidad | Auditar WCAG, contraste, ARIA |
 | `@seo-agent` | SEO | Meta tags, structured data, headings |
@@ -160,7 +161,7 @@ Para usar un agente especializado, menciónalo con `@`:
 
 Puedes invocar múltiples agentes en una sola solicitud:
 
-```
+```bash
 @frontend-agent Crea una nueva sección de "Testimonios" en index.html. 
 @a11y-agent Asegura que cumpla WCAG 2.1 AA. 
 @seo-agent Optimiza las meta tags.
@@ -172,7 +173,7 @@ Puedes invocar múltiples agentes en una sola solicitud:
 
 ### Flujo 1: Desarrollo de Nueva Feature
 
-```
+```txt
 1. Planificación
    @docs-agent Documenta el plan para implementar [feature]
 
@@ -194,7 +195,7 @@ Puedes invocar múltiples agentes en una sola solicitud:
 
 ### Flujo 2: Fix de Bug
 
-```
+```txt
 1. Diagnóstico
    "Describe el bug al agente apropiado"
 
@@ -227,6 +228,7 @@ squirrel audit https://bairescoding.github.io --format llm --coverage full
 ### Error: "squirrel command not found"
 
 **Solución:**
+
 ```bash
 # Instalar squirrel CLI
 curl -fsSL https://squirrelscan.com/install.sh | sh
@@ -240,6 +242,7 @@ echo $PATH | grep squirrel
 ### Error: "Skill not found"
 
 **Solución:**
+
 ```bash
 # Reinstalar la skill
 npx skills add <owner/repo> --skill <skill-name>
@@ -251,6 +254,7 @@ npx skills list
 ### Auditoría muy lenta
 
 **Solución:**
+
 ```bash
 # Usar coverage quick para sitios grandes
 squirrel audit https://bairescoding.github.io --coverage quick
@@ -265,6 +269,7 @@ squirrel audit https://bairescoding.github.io --verbose
 ### Resultados inconsistentes
 
 **Solución:**
+
 ```bash
 # Forzar auditoría fresh (sin caché)
 squirrel audit https://bairescoding.github.io --refresh
@@ -288,5 +293,5 @@ Si encuentras problemas con las skills:
 
 1. Verificar que el agente soporta la skill (ver tabla en SKILLS.md)
 2. Reinstalar la skill: `npx skills add <owner/repo> --skill <name>`
-3. Para squirrel CLI, visitar: https://squirrelscan.com/support
-4. Reportar issues en: https://github.com/bairescoding/bairescoding.github.io/issues
+3. Para squirrel CLI, visitar: [https://squirrelscan.com/support](https://squirrelscan.com/support)
+4. Reportar issues en: [https://github.com/bairescoding/bairescoding.github.io/issues](https://github.com/bairescoding/bairescoding.github.io/issues)

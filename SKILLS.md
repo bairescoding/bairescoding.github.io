@@ -7,6 +7,7 @@ Este documento describe las skills instaladas en el repositorio para mejorar la 
 ### Core (Prioridad Alta)
 
 #### 1. web-design-guidelines
+
 - **Owner:** vercel-labs/agent-skills
 - **Descripción:** Review files for compliance with Web Interface Guidelines
 - **Instalación:** `npx skills add https://github.com/vercel-labs/agent-skills --skill web-design-guidelines`
@@ -14,6 +15,7 @@ Este documento describe las skills instaladas en el repositorio para mejorar la 
 - **Uso:** Audita archivos HTML/CSS contra las guías de diseño web de Vercel
 
 #### 2. frontend-design
+
 - **Owner:** anthropics/skills
 - **Descripción:** Creation of distinctive, production-grade frontend interfaces
 - **Instalación:** `npx skills add https://github.com/anthropics/skills --skill frontend-design`
@@ -21,6 +23,7 @@ Este documento describe las skills instaladas en el repositorio para mejorar la 
 - **Uso:** Guía para crear interfaces frontend de alta calidad, evitando diseños genéricos de IA
 
 #### 3. audit-website
+
 - **Owner:** squirrelscan/skills
 - **Descripción:** Audit websites for SEO, technical, content, performance and security issues
 - **Instalación:** `npx skills add https://github.com/squirrelscan/skills --skill audit-website`
@@ -29,6 +32,7 @@ Este documento describe las skills instaladas en el repositorio para mejorar la 
 - **Uso:** Auditoría completa del sitio web (230+ reglas en 21 categorías)
 
 #### 4. seo-audit
+
 - **Owner:** coreyhaines31/marketingskills
 - **Descripción:** Expert SEO audit to identify issues and provide actionable recommendations
 - **Instalación:** `npx skills add https://github.com/coreyhaines31/marketingskills --skill seo-audit`
@@ -36,6 +40,7 @@ Este documento describe las skills instaladas en el repositorio para mejorar la 
 - **Uso:** Auditoría SEO especializada con enfoque en crawlability, indexación y on-page SEO
 
 #### 5. responsive-design
+
 - **Owner:** wshobson/agents
 - **Descripción:** Modern responsive design techniques for all screen sizes
 - **Instalación:** `npx skills add https://github.com/wshobson/agents --skill responsive-design`
@@ -45,6 +50,7 @@ Este documento describe las skills instaladas en el repositorio para mejorar la 
 ### Adicionales (Prioridad Media)
 
 #### 6. accessibility-auditor
+
 - **Owner:** patricio0312rev/skills
 - **Descripción:** Comprehensive accessibility auditing for WCAG compliance
 - **Instalación:** `npx skills add https://github.com/patricio0312rev/skills --skill accessibility-auditor`
@@ -52,6 +58,7 @@ Este documento describe las skills instaladas en el repositorio para mejorar la 
 - **Uso:** Auditoría de accesibilidad para cumplimiento WCAG 2.1
 
 #### 7. web-perf
+
 - **Owner:** cloudflare/skills
 - **Descripción:** Web performance optimization and Core Web Vitals
 - **Instalación:** `npx skills add https://github.com/cloudflare/skills --skill web-perf`
@@ -59,6 +66,7 @@ Este documento describe las skills instaladas en el repositorio para mejorar la 
 - **Uso:** Optimización de performance web y Core Web Vitals
 
 #### 8. changelog-writer
+
 - **Owner:** patricio0312rev/skills
 - **Descripción:** Automated changelog generation from commits
 - **Instalación:** `npx skills add https://github.com/patricio0312rev/skills --skill changelog-writer`
@@ -66,6 +74,7 @@ Este documento describe las skills instaladas en el repositorio para mejorar la 
 - **Uso:** Generación automática de CHANGELOG.md desde commits
 
 #### 9. docs-starter-kit
+
 - **Owner:** patricio0312rev/skills
 - **Descripción:** Documentation starter templates and best practices
 - **Instalación:** `npx skills add https://github.com/patricio0312rev/skills --skill docs-starter-kit`
@@ -73,6 +82,7 @@ Este documento describe las skills instaladas en el repositorio para mejorar la 
 - **Uso:** Plantillas y mejores prácticas para documentación
 
 #### 10. frontend-internationalization-best-practices
+
 - **Owner:** sergiodxa/agent-skills
 - **Descripción:** Best practices for frontend internationalization and i18n
 - **Instalación:** `npx skills add https://github.com/sergiodxa/agent-skills --skill frontend-internationalization-best-practices`
@@ -122,7 +132,7 @@ npx skills list
 Las skills se activan automáticamente según el tipo de archivo:
 
 | Tipo de Archivo | Skills Activadas |
-|----------------|------------------|
+| -------------- | ---------------- |
 | `*.html` | web-design-guidelines, frontend-design, seo-audit, accessibility-auditor |
 | `*.css` | web-design-guidelines, frontend-design, responsive-design, accessibility-auditor |
 | `*.js` | frontend-design, web-perf |
