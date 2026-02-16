@@ -74,7 +74,7 @@
     top: 70px;
     left: 0;
     right: 0;
-    background: rgba(10, 10, 10, 0.98);
+    background: color-mix(in srgb, var(--bg-primary) 98%, transparent);
     backdrop-filter: blur(10px);
     flex-direction: column;
     padding: var(--space-6);
@@ -83,7 +83,7 @@
     transform: translateY(-100%);
     opacity: 0;
     visibility: hidden;
-    transition: all var(--transition-base);
+    transition: all var(--transition-base), background var(--transition-base);
   }
   
   .nav-menu.active {
@@ -99,18 +99,23 @@
   
   .nav-theme-toggle {
     padding: var(--space-3) 0;
-    display: flex;
+    display: flex !important;
     justify-content: center;
+    list-style: none;
   }
   
   .nav-theme-toggle .theme-toggle {
     width: 48px;
     height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .nav-theme-toggle .theme-toggle svg {
     width: 24px;
     height: 24px;
+    display: block;
   }
   
   .nav-cta {
