@@ -366,6 +366,7 @@
   grid-template-columns: 2fr 1fr;
   gap: var(--space-16);
   margin-bottom: var(--space-16);
+  align-items: center;
 }
 
 .footer-main {
