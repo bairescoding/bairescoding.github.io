@@ -51,6 +51,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `README.md` completo con estructura, tecnologías y guías
 - `CHANGELOG.md` siguiendo formato Keep a Changelog
+- `LICENSE` con licencia MIT
 
 ### Skills Integradas
 
