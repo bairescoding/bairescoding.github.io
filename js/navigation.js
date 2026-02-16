@@ -75,38 +75,6 @@
         });
     }
     
-    // Email copy functionality
-    const emailBtn = document.getElementById('emailBtn');
-    const copyFeedback = document.getElementById('copyFeedback');
-    
-    if (emailBtn && copyFeedback) {
-        emailBtn.addEventListener('click', async () => {
-            const email = emailBtn.dataset.email;
-            
-            try {
-                await navigator.clipboard.writeText(email);
-                copyFeedback.classList.add('show');
-                
-                setTimeout(() => {
-                    copyFeedback.classList.remove('show');
-                }, 2000);
-            } catch (err) {
-                // Fallback for older browsers
-                const textArea = document.createElement('textarea');
-                textArea.value = email;
-                document.body.appendChild(textArea);
-                textArea.select();
-                document.execCommand('copy');
-                document.body.removeChild(textArea);
-                
-                copyFeedback.classList.add('show');
-                setTimeout(() => {
-                    copyFeedback.classList.remove('show');
-                }, 2000);
-            }
-        });
-    }
-    
     // Smooth scroll for all anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
