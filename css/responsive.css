@@ -97,6 +97,22 @@
     padding: var(--space-3) 0;
   }
   
+  .nav-theme-toggle {
+    padding: var(--space-3) 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-theme-toggle .theme-toggle {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .nav-theme-toggle .theme-toggle svg {
+    width: 24px;
+    height: 24px;
+  }
+  
   .nav-cta {
     display: none;
   }

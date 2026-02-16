@@ -1,5 +1,25 @@
 /* Sections Styling */
 
+/* Smooth transitions for theme changes */
+.section,
+.navbar,
+.hero,
+.about,
+.differences,
+.services,
+.why-choose,
+.cta,
+.footer,
+.modal-container,
+.mission-box,
+.email-btn,
+.social-link,
+.back-to-top {
+  transition: background-color var(--transition-base), 
+              border-color var(--transition-base),
+              color var(--transition-base);
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -12,9 +32,10 @@
 }
 
 .navbar.scrolled {
-  background: rgba(10, 10, 10, 0.9);
+  background: var(--bg-primary);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
+  opacity: 0.95;
 }
 
 .nav-container {
@@ -90,6 +111,17 @@
 .nav-cta {
   padding: var(--space-2) var(--space-5);
   font-size: var(--text-sm);
+  margin-left: var(--space-6);
+}
+
+/* Theme toggle in nav menu */
+.nav-theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.nav-theme-toggle .theme-toggle {
+  margin: 0;
 }
 
 /* Mobile Nav Toggle */
@@ -541,7 +573,7 @@
   position: fixed;
   inset: 0;
   z-index: var(--z-modal);
-  background: rgba(0, 0, 0, 0.8);
+  background: color-mix(in srgb, var(--bg-primary) 80%, transparent);
   backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
@@ -549,7 +581,7 @@
   padding: var(--space-4);
   opacity: 0;
   visibility: hidden;
-  transition: opacity var(--transition-base), visibility var(--transition-base);
+  transition: opacity var(--transition-base), visibility var(--transition-base), background var(--transition-base);
 }
 
 .modal-overlay.active {

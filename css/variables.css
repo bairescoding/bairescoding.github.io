@@ -1,26 +1,30 @@
 :root {
-  /* Colores principales */
+  /* Colores primarios (se mantienen en ambos temas) */
   --color-primary: #56C34F;
   --color-primary-light: #6EE768;
   --color-primary-dark: #3A8F35;
   --color-primary-glow: rgba(86, 195, 79, 0.4);
   
-  /* Backgrounds */
+  /* DARK MODE - Default */
   --bg-primary: #0a0a0a;
   --bg-secondary: #111111;
   --bg-tertiary: #1a1a1a;
   --bg-card: #161616;
   --bg-hover: #222222;
   
-  /* Texto */
   --text-primary: #ffffff;
   --text-secondary: #a0a0a0;
   --text-tertiary: #666666;
   --text-muted: #444444;
   
-  /* Bordes */
   --border-color: #2a2a2a;
   --border-hover: #3a3a3a;
+  
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px var(--color-primary-glow);
+  --shadow-glow-lg: 0 0 60px var(--color-primary-glow);
   
   /* Tipografía */
   --font-display: 'VT323', monospace;
@@ -67,13 +71,6 @@
   --radius-2xl: 1.5rem;
   --radius-full: 9999px;
   
-  /* Sombras */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 30px var(--color-primary-glow);
-  --shadow-glow-lg: 0 0 60px var(--color-primary-glow);
-  
   /* Transiciones */
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
@@ -89,14 +86,25 @@
   --z-tooltip: 500;
 }
 
-/* Dark mode is default */
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg-primary: #0a0a0a;
-    --bg-secondary: #111111;
-    --text-primary: #ffffff;
-    --text-secondary: #a0a0a0;
-  }
+/* LIGHT MODE */
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-tertiary: #e2e8f0;
+  --bg-card: #ffffff;
+  --bg-hover: #e2e8f0;
+  
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-tertiary: #94a3b8;
+  --text-muted: #cbd5e1;
+  
+  --border-color: #e2e8f0;
+  --border-hover: #cbd5e1;
+  
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* Reduced motion */

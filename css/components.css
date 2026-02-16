@@ -361,3 +361,44 @@
   font-size: var(--text-xs);
   color: var(--color-primary);
 }
+
+/* Theme Toggle Button */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: transparent;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Ensure all components transition smoothly */
+.difference-card,
+.service-card,
+.benefit-card,
+.pixel-item,
+.location-badge,
+.service-icon,
+.benefit-card-icon {
+  transition: background-color var(--transition-base), 
+              border-color var(--transition-base), 
+              box-shadow var(--transition-base),
+              transform var(--transition-base);
+}
