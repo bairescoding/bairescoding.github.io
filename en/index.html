@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BairesCoding | Transformamos ideas en soluciones digitales</title>
+    <title>BairesCoding | We transform ideas into digital solutions</title>
     
     <!-- Meta Tags SEO -->
-    <meta name="description" content="BairesCoding - Transformamos ideas en soluciones digitales extraordinarias. Desarrollo de software a medida en Buenos Aires.">
-    <meta name="keywords" content="desarrollo software, Buenos Aires, aplicaciones web, consultoría tecnológica, IA, cloud">
+    <meta name="description" content="BairesCoding - We transform ideas into extraordinary digital solutions. Custom software development in Buenos Aires.">
+    <meta name="keywords" content="software development, Buenos Aires, web applications, technology consulting, AI, cloud">
     <meta name="author" content="BairesCoding">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="BairesCoding | Desarrollo de Software">
-    <meta property="og:description" content="Transformamos ideas en soluciones digitales extraordinarias">
-    <meta property="og:image" content="./img/bairescoding.png">
-    <meta property="og:url" content="https://bairescoding.github.io">
+    <meta property="og:title" content="BairesCoding | Software Development">
+    <meta property="og:description" content="We transform ideas into extraordinary digital solutions">
+    <meta property="og:image" content="../img/bairescoding.png">
+    <meta property="og:url" content="https://bairescoding.github.io/en/">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="BairesCoding">
-    <meta name="twitter:description" content="Transformamos ideas en soluciones digitales extraordinarias">
-    <meta name="twitter:image" content="./img/bairescoding.png">
+    <meta name="twitter:description" content="We transform ideas into extraordinary digital solutions">
+    <meta name="twitter:image" content="../img/bairescoding.png">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="./img/bairescoding.svg">
-    <link rel="icon" type="image/png" href="./img/bairescoding.png">
-    <link rel="apple-touch-icon" href="./img/bairescoding.png">
+    <link rel="icon" type="image/svg+xml" href="../img/bairescoding.svg">
+    <link rel="icon" type="image/png" href="../img/bairescoding.png">
+    <link rel="apple-touch-icon" href="../img/bairescoding.png">
+    
+    <!-- hreflang Tags -->
+    <link rel="alternate" hreflang="es" href="https://bairescoding.github.io/">
+    <link rel="alternate" hreflang="en" href="https://bairescoding.github.io/en/">
+    <link rel="alternate" hreflang="x-default" href="https://bairescoding.github.io/">
     
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,18 +48,13 @@
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     
-    <!-- Hreflang for multilingual SEO -->
-    <link rel="alternate" hreflang="es" href="https://bairescoding.github.io/">
-    <link rel="alternate" hreflang="en" href="https://bairescoding.github.io/en/">
-    <link rel="alternate" hreflang="x-default" href="https://bairescoding.github.io/">
-    
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/components.css">
-    <link rel="stylesheet" href="./css/sections.css">
-    <link rel="stylesheet" href="./css/animations.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/sections.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
@@ -62,8 +62,8 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "BairesCoding",
-        "description": "Transformamos ideas en soluciones digitales extraordinarias. Desarrollo de software a medida en Buenos Aires.",
-        "url": "https://bairescoding.github.io",
+        "description": "We transform ideas into extraordinary digital solutions. Custom software development in Buenos Aires.",
+        "url": "https://bairescoding.github.io/en/",
         "logo": "https://bairescoding.github.io/img/bairescoding.png",
         "sameAs": [
             "https://github.com/BairesCoding",
@@ -85,13 +85,13 @@
 </head>
 <body>
     <!-- Skip to main content link for accessibility -->
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <img src="./img/bairescoding.svg" alt="BairesCoding" class="logo-img" width="40" height="40" fetchpriority="high">
+                <img src="../img/bairescoding.svg" alt="BairesCoding" class="logo-img" width="40" height="40" fetchpriority="high">
                 <span class="logo-text">BairesCoding<span class="cursor">_</span></span>
             </a>
             
@@ -102,13 +102,13 @@
             </button>
             
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-                <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                <li><a href="#diferencias" class="nav-link">Diferencias</a></li>
-                <li><a href="#por-que" class="nav-link">Por Qué Elegirnos</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#differences" class="nav-link">Differences</a></li>
+                <li><a href="#why-us" class="nav-link">Why Choose Us</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
                 <li class="nav-theme-toggle">
-                    <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema" title="Cambiar tema">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Change theme" title="Change theme">
                         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                         </svg>
@@ -127,12 +127,12 @@
                 </li>
             </ul>
             
-            <button class="btn btn-primary nav-cta" data-modal="contact">Contactar</button>
+            <button class="btn btn-primary nav-cta" data-modal="contact">Contact Us</button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="inicio">
+    <section class="hero" id="home">
         <canvas id="particles-canvas" class="particles-canvas"></canvas>
         
         <div class="hero-content">
@@ -140,24 +140,24 @@
                 <span class="typing-text"></span><span class="cursor-blink">_</span>
             </h1>
             
-            <p class="hero-subtitle">Transformamos ideas en soluciones digitales extraordinarias</p>
+            <p class="hero-subtitle">We transform ideas into extraordinary digital solutions</p>
             
             <div class="hero-buttons">
-                <a href="#servicios" class="btn btn-primary btn-glow">
-                    <span>Ver Servicios</span>
+                <a href="#services" class="btn btn-primary btn-glow">
+                    <span>View Services</span>
                     <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
                 </a>
                 <button class="btn btn-outline" data-modal="contact">
-                    <span>Contactar</span>
+                    <span>Contact Us</span>
                 </button>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="section about" id="sobre-nosotros">
+    <section class="section about" id="about-us">
         <div class="container">
             <div class="about-grid">
                 <div class="about-visual">
@@ -178,22 +178,22 @@
                         <svg class="location-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
-                        <span class="location-dest">Mundo</span>
+                        <span class="location-dest">World</span>
                     </div>
                 </div>
                 
                 <div class="about-content">
-                    <span class="section-tag">🚀 Sobre Nosotros</span>
-                    <h2 class="section-title">Más que código, <span class="highlight">soluciones</span></h2>
+                    <span class="section-tag">🚀 About Us</span>
+                    <h2 class="section-title">More than code, <span class="highlight">solutions</span></h2>
                     <p class="about-text">
-                        En <strong>BairesCoding</strong>, creemos que el código es más que solo tecnología: es el puente que conecta las ambiciones de tu empresa con el éxito real.
+                        At <strong>BairesCoding</strong>, we believe that code is more than just technology: it's the bridge that connects your company's ambitions with real success.
                     </p>
                     <p class="about-text">
-                        Somos un equipo apasionado de desarrolladores, diseñadores y estrategas digitales con sede en Buenos Aires, comprometidos con crear soluciones tecnológicas que generan impacto medible.
+                        We are a passionate team of developers, designers, and digital strategists based in Buenos Aires, committed to creating technological solutions that generate measurable impact.
                     </p>
                     <div class="mission-box">
-                        <span class="mission-label">Nuestra misión</span>
-                        <p class="mission-text">Democratizar el acceso a tecnología de clase mundial para empresas de todos los tamaños, sin importar su ubicación geográfica.</p>
+                        <span class="mission-label">Our mission</span>
+                        <p class="mission-text">Democratize access to world-class technology for companies of all sizes, regardless of their geographic location.</p>
                     </div>
                 </div>
             </div>
@@ -201,41 +201,41 @@
     </section>
 
     <!-- Differences Section -->
-    <section class="section differences" id="diferencias">
+    <section class="section differences" id="differences">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Lo Que Nos Hace Diferentes</span>
-                <h2 class="section-title">No somos solo otro <span class="highlight">proveedor</span></h2>
+                <span class="section-tag">What Makes Us Different</span>
+                <h2 class="section-title">We are not just another <span class="highlight">provider</span></h2>
             </div>
             
             <div class="differences-grid">
                 <div class="difference-card" data-aos="fade-up" data-delay="0">
                     <div class="card-icon">🎯</div>
-                    <h3 class="card-title">Enfoque en Resultados</h3>
-                    <p class="card-text">No solo escribimos código, resolvemos problemas de negocio reales. Cada línea tiene un propósito claro.</p>
+                    <h3 class="card-title">Results-Focused Approach</h3>
+                    <p class="card-text">We don't just write code, we solve real business problems. Every line has a clear purpose.</p>
                 </div>
                 
                 <div class="difference-card" data-aos="fade-up" data-delay="100">
                     <div class="card-icon">🤝</div>
-                    <h3 class="card-title">Partnership Estratégico</h3>
-                    <p class="card-text">Nos convertimos en aliados de tu crecimiento, no solo proveedores. Tu éxito es nuestro éxito.</p>
+                    <h3 class="card-title">Strategic Partnership</h3>
+                    <p class="card-text">We become allies in your growth, not just providers. Your success is our success.</p>
                 </div>
                 
                 <div class="difference-card" data-aos="fade-up" data-delay="200">
                     <div class="card-icon">🔒</div>
-                    <h3 class="card-title">Calidad Garantizada</h3>
-                    <p class="card-text">Cada línea de código cumple con los más altos estándares internacionales de calidad y seguridad.</p>
+                    <h3 class="card-title">Guaranteed Quality</h3>
+                    <p class="card-text">Every line of code meets the highest international quality and security standards.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section class="section services" id="servicios">
+    <section class="section services" id="services">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">🛠️ Nuestros Servicios</span>
-                <h2 class="section-title">Soluciones <span class="highlight">a tu medida</span></h2>
+                <span class="section-tag">🛠️ Our Services</span>
+                <h2 class="section-title">Solutions <span class="highlight">tailored to you</span></h2>
             </div>
             
             <div class="services-grid">
@@ -243,54 +243,54 @@
                 <div class="service-card featured" data-aos="fade-up">
                     <div class="service-header">
                         <div class="service-icon">💻</div>
-                        <h3 class="service-title">Desarrollo de Software a Medida</h3>
+                        <h3 class="service-title">Custom Software Development</h3>
                     </div>
                     <ul class="service-list">
-                        <li><span class="check">✓</span> Aplicaciones web modernas y escalables</li>
-                        <li><span class="check">✓</span> Sistemas empresariales robustos</li>
-                        <li><span class="check">✓</span> APIs y microservicios</li>
-                        <li><span class="check">✓</span> Migración y modernización de legacy systems</li>
+                        <li><span class="check">✓</span> Modern and scalable web applications</li>
+                        <li><span class="check">✓</span> Robust enterprise systems</li>
+                        <li><span class="check">✓</span> APIs and microservices</li>
+                        <li><span class="check">✓</span> Legacy system migration and modernization</li>
                     </ul>
                 </div>
                 
                 <div class="service-card" data-aos="fade-up" data-delay="100">
                     <div class="service-icon">📱</div>
-                    <h3 class="service-title">Soluciones Robustas</h3>
+                    <h3 class="service-title">Robust Solutions</h3>
                     <ul class="service-list">
-                        <li><span class="check">✓</span> Aplicaciones multiplataforma</li>
-                        <li><span class="check">✓</span> Soluciones híbridas optimizadas</li>
+                        <li><span class="check">✓</span> Cross-platform applications</li>
+                        <li><span class="check">✓</span> Optimized hybrid solutions</li>
                     </ul>
                 </div>
                 
                 <div class="service-card" data-aos="fade-up" data-delay="200">
                     <div class="service-icon">☁️</div>
-                    <h3 class="service-title">Arquitectura & Cloud</h3>
+                    <h3 class="service-title">Architecture & Cloud</h3>
                     <ul class="service-list">
-                        <li><span class="check">✓</span> Diseño de arquitecturas cloud-native</li>
-                        <li><span class="check">✓</span> Implementación en AWS, Azure, GCP</li>
-                        <li><span class="check">✓</span> DevOps y CI/CD</li>
-                        <li><span class="check">✓</span> Optimización de infraestructura</li>
+                        <li><span class="check">✓</span> Cloud-native architecture design</li>
+                        <li><span class="check">✓</span> Implementation on AWS, Azure, GCP</li>
+                        <li><span class="check">✓</span> DevOps and CI/CD</li>
+                        <li><span class="check">✓</span> Infrastructure optimization</li>
                     </ul>
                 </div>
                 
                 <div class="service-card" data-aos="fade-up" data-delay="300">
                     <div class="service-icon">💡</div>
-                    <h3 class="service-title">Consultoría Tecnológica</h3>
+                    <h3 class="service-title">Technology Consulting</h3>
                     <ul class="service-list">
-                        <li><span class="check">✓</span> Roadmap de transformación digital</li>
-                        <li><span class="check">✓</span> Selección de tecnologías óptimas</li>
-                        <li><span class="check">✓</span> Capacitación de equipos</li>
+                        <li><span class="check">✓</span> Digital transformation roadmap</li>
+                        <li><span class="check">✓</span> Optimal technology selection</li>
+                        <li><span class="check">✓</span> Team training</li>
                     </ul>
                 </div>
                 
                 <div class="service-card" data-aos="fade-up" data-delay="400">
                     <div class="service-icon">🤖</div>
-                    <h3 class="service-title">Inteligencia Artificial & Data</h3>
+                    <h3 class="service-title">Artificial Intelligence & Data</h3>
                     <ul class="service-list">
-                        <li><span class="check">✓</span> Implementación de soluciones de IA/ML</li>
-                        <li><span class="check">✓</span> Análisis de datos y BI</li>
-                        <li><span class="check">✓</span> Automatización inteligente</li>
-                        <li><span class="check">✓</span> Chatbots y asistentes virtuales</li>
+                        <li><span class="check">✓</span> AI/ML solution implementation</li>
+                        <li><span class="check">✓</span> Data analysis and BI</li>
+                        <li><span class="check">✓</span> Intelligent automation</li>
+                        <li><span class="check">✓</span> Chatbots and virtual assistants</li>
                     </ul>
                 </div>
             </div>
@@ -298,11 +298,11 @@
     </section>
 
     <!-- Why Choose Us Section -->
-    <section class="section why-choose" id="por-que">
+    <section class="section why-choose" id="why-us">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">📊 Por Qué Elegirnos</span>
-                <h2 class="section-title">Beneficios <span class="highlight">reales</span></h2>
+                <span class="section-tag">📊 Why Choose Us</span>
+                <h2 class="section-title"><span class="highlight">Real</span> benefits</h2>
             </div>
             
             <div class="benefits-grid">
@@ -310,10 +310,10 @@
                     <div class="benefit-card-icon">⏱️</div>
                     <div class="benefit-card-content">
                         <h3 class="benefit-card-title">Time-to-Market</h3>
-                        <p class="benefit-card-desc">Lanzamos MVPs en semanas, no meses</p>
+                        <p class="benefit-card-desc">We launch MVPs in weeks, not months</p>
                         <div class="benefit-card-stat">
                             <span class="stat-number" data-target="80">0</span>
-                            <span class="stat-suffix">% más rápido</span>
+                            <span class="stat-suffix">% faster</span>
                         </div>
                     </div>
                 </div>
@@ -321,11 +321,11 @@
                 <div class="benefit-card" data-aos="fade-up" data-delay="100">
                     <div class="benefit-card-icon">💰</div>
                     <div class="benefit-card-content">
-                        <h3 class="benefit-card-title">Costo-Eficiencia</h3>
-                        <p class="benefit-card-desc">Equipo senior a costos competitivos LATAM</p>
+                        <h3 class="benefit-card-title">Cost Efficiency</h3>
+                        <p class="benefit-card-desc">Senior team at competitive LATAM costs</p>
                         <div class="benefit-card-stat">
                             <span class="stat-number" data-target="70">0</span>
-                            <span class="stat-suffix">% ahorro</span>
+                            <span class="stat-suffix">% savings</span>
                         </div>
                     </div>
                 </div>
@@ -333,8 +333,8 @@
                 <div class="benefit-card" data-aos="fade-up" data-delay="200">
                     <div class="benefit-card-icon">🔄</div>
                     <div class="benefit-card-content">
-                        <h3 class="benefit-card-title">Escalabilidad</h3>
-                        <p class="benefit-card-desc">Soluciones pensadas para crecer contigo</p>
+                        <h3 class="benefit-card-title">Scalability</h3>
+                        <p class="benefit-card-desc">Solutions designed to grow with you</p>
                         <div class="benefit-card-badge">Cloud-native</div>
                     </div>
                 </div>
@@ -342,8 +342,8 @@
                 <div class="benefit-card" data-aos="fade-up" data-delay="300">
                     <div class="benefit-card-icon">🛡️</div>
                     <div class="benefit-card-content">
-                        <h3 class="benefit-card-title">Seguridad</h3>
-                        <p class="benefit-card-desc">Cumplimiento de estándares internacionales</p>
+                        <h3 class="benefit-card-title">Security</h3>
+                        <p class="benefit-card-desc">Compliance with international standards</p>
                         <div class="benefit-card-badge">ISO 27001</div>
                     </div>
                 </div>
@@ -351,12 +351,12 @@
                 <div class="benefit-card featured" data-aos="fade-up" data-delay="400">
                     <div class="benefit-card-icon">📈</div>
                     <div class="benefit-card-content">
-                        <h3 class="benefit-card-title">ROI Medible</h3>
-                        <p class="benefit-card-desc">Métricas claras de impacto en tu negocio. Cada proyecto incluye dashboard de KPIs para que puedas medir el retorno de inversión en tiempo real.</p>
+                        <h3 class="benefit-card-title">Measurable ROI</h3>
+                        <p class="benefit-card-desc">Clear metrics of impact on your business. Each project includes a KPI dashboard so you can measure return on investment in real time.</p>
                         <div class="benefit-card-features">
-                            <span class="feature-tag">KPIs en tiempo real</span>
-                            <span class="feature-tag">Dashboards personalizados</span>
-                            <span class="feature-tag">Reportes automáticos</span>
+                            <span class="feature-tag">Real-time KPIs</span>
+                            <span class="feature-tag">Custom dashboards</span>
+                            <span class="feature-tag">Automatic reports</span>
                         </div>
                     </div>
                 </div>
@@ -365,36 +365,36 @@
     </section>
 
     <!-- Contact/Footer Section -->
-    <footer class="footer" id="contacto">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-main">
-                    <h2 class="footer-title">¿Listo Para Transformar Tu Negocio?</h2>
-                    <p class="footer-subtitle">Tu próxima gran idea no tiene que quedarse en el papel</p>
+                    <h2 class="footer-title">Ready to Transform Your Business?</h2>
+                    <p class="footer-subtitle">Your next great idea doesn't have to stay on paper</p>
                     
                     <div class="cta-features">
                         <div class="cta-feature">
                             <span class="feature-check">✓</span>
-                            <span>Experiencia comprobada en múltiples industrias</span>
+                            <span>Proven experience in multiple industries</span>
                         </div>
                         <div class="cta-feature">
                             <span class="feature-check">✓</span>
-                            <span>Tecnologías de vanguardia</span>
+                            <span>Cutting-edge technologies</span>
                         </div>
                         <div class="cta-feature">
                             <span class="feature-check">✓</span>
-                            <span>Compromiso absoluto con tus objetivos</span>
+                            <span>Absolute commitment to your objectives</span>
                         </div>
                         <div class="cta-feature">
                             <span class="feature-check">✓</span>
-                            <span>Flexibilidad para adaptarnos a tu ritmo</span>
+                            <span>Flexibility to adapt to your pace</span>
                         </div>
                     </div>
                     
-                    <p class="footer-text">No importa en qué etapa esté tu proyecto, desde una idea inicial hasta la necesidad de escalar una plataforma existente, tenemos la experiencia y el equipo para hacerlo realidad.</p>
+                    <p class="footer-text">No matter what stage your project is in, from an initial idea to the need to scale an existing platform, we have the experience and team to make it happen.</p>
                     
                     <button class="btn btn-cta btn-glow-large" data-modal="contact">
-                        <span>🚀 Iniciar Proyecto</span>
+                        <span>🚀 Start Project</span>
                     </button>
                 </div>
                 
@@ -422,14 +422,14 @@
             
             <div class="footer-bottom">
                 <div class="footer-brand">
-                    <img src="./img/bairescoding.svg" alt="" class="footer-logo" width="32" height="32" loading="lazy">
+                    <img src="../img/bairescoding.svg" alt="" class="footer-logo" width="32" height="32" loading="lazy">
                     <div class="brand-text">
                         <strong>BairesCoding</strong>
-                        <span>• Innovación, Código y Resultados</span>
+                        <span>• Innovation, Code, and Results</span>
                     </div>
                 </div>
-                <p class="footer-tagline">Desde Buenos Aires para el mundo 🌍</p>
-                <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+                <p class="footer-tagline">From Buenos Aires to the world 🌍</p>
+                <button class="back-to-top" id="backToTop" aria-label="Back to top">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M18 15l-6-6-6 6"/>
                     </svg>
@@ -437,7 +437,7 @@
             </div>
             
             <div class="footer-legal">
-                <p>&copy; 2025 BairesCoding. Todos los derechos reservados.</p>
+                <p>&copy; 2025 BairesCoding. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -445,61 +445,61 @@
     <!-- Contact Modal -->
     <div class="modal-overlay" id="contactModal" aria-hidden="true">
         <div class="modal-container">
-            <button class="modal-close" id="modalClose" aria-label="Cerrar">
+            <button class="modal-close" id="modalClose" aria-label="Close">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M18 6L6 18M6 6l12 12"/>
                 </svg>
             </button>
             
             <div class="modal-header">
-                <h2 class="modal-title">Contactar</h2>
-                <p class="modal-subtitle">¿Tienes un proyecto en mente? Hablemos.</p>
+                <h2 class="modal-title">Contact Us</h2>
+                <p class="modal-subtitle">Do you have a project in mind? Let's talk.</p>
             </div>
             
             <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
                 <!-- Web3Forms Access Key -->
                 <input type="hidden" name="access_key" value="72985457-00e2-4114-bedc-c545d1341f6a">
-                <input type="hidden" name="subject" value="Nuevo contacto desde BairesCoding">
+                <input type="hidden" name="subject" value="New contact from BairesCoding">
                 <input type="hidden" name="from_name" value="BairesCoding Website">
                 
                 <!-- Honeypot Spam Protection -->
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 
                 <div class="form-group">
-                    <label for="name" class="form-label">Nombre *</label>
-                    <input type="text" id="name" name="name" class="form-input" required placeholder="Tu nombre">
+                    <label for="name" class="form-label">Name *</label>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder="Your name">
                 </div>
                 
                 <div class="form-group">
                     <label for="email" class="form-label">Email *</label>
-                    <input type="email" id="email" name="email" class="form-input" required placeholder="tu@email.com">
+                    <input type="email" id="email" name="email" class="form-input" required placeholder="your@email.com">
                 </div>
                 
                 <div class="form-group">
-                    <label for="company" class="form-label">Empresa</label>
-                    <input type="text" id="company" name="company" class="form-input" placeholder="Nombre de tu empresa (opcional)">
+                    <label for="company" class="form-label">Company</label>
+                    <input type="text" id="company" name="company" class="form-input" placeholder="Your company name (optional)">
                 </div>
                 
                 <div class="form-group">
-                    <label for="project-type" class="form-label">Tipo de Proyecto</label>
+                    <label for="project-type" class="form-label">Project Type</label>
                     <select id="project-type" name="project_type" class="form-select">
-                        <option value="">Selecciona una opción</option>
-                        <option value="web">Desarrollo Web</option>
-                        <option value="mobile">App Mobile</option>
-                        <option value="consultoria">Consultoría Tecnológica</option>
-                        <option value="ia">Inteligencia Artificial & Data</option>
-                        <option value="cloud">Arquitectura & Cloud</option>
-                        <option value="otro">Otro</option>
+                        <option value="">Select an option</option>
+                        <option value="web">Web Development</option>
+                        <option value="mobile">Mobile App</option>
+                        <option value="consultoria">Technology Consulting</option>
+                        <option value="ia">Artificial Intelligence & Data</option>
+                        <option value="cloud">Architecture & Cloud</option>
+                        <option value="otro">Other</option>
                     </select>
                 </div>
                 
                 <div class="form-group">
-                    <label for="message" class="form-label">Mensaje *</label>
-                    <textarea id="message" name="message" class="form-textarea" rows="4" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                    <label for="message" class="form-label">Message *</label>
+                    <textarea id="message" name="message" class="form-textarea" rows="4" required placeholder="Tell us about your project..."></textarea>
                 </div>
                 
                 <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
-                    <span class="btn-text">Enviar mensaje</span>
+                    <span class="btn-text">Send message</span>
                     <span class="btn-loader" style="display: none;">
                         <svg class="spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="10" stroke-dasharray="60" stroke-dashoffset="10"/>
@@ -511,20 +511,20 @@
             <!-- Success Message -->
             <div class="success-message" id="successMessage" style="display: none;">
                 <div class="success-icon">✓</div>
-                <h3 class="success-title">¡Mensaje enviado!</h3>
-                <p class="success-text">Gracias por contactarnos. Te responderemos pronto.</p>
+                <h3 class="success-title">Message sent!</h3>
+                <p class="success-text">Thank you for contacting us. We will respond soon.</p>
             </div>
         </div>
     </div>
 
     <!-- JavaScript -->
-    <script src="./js/theme-toggle.js"></script>
-    <script src="./js/particles.js"></script>
-    <script src="./js/typing.js"></script>
-    <script src="./js/scroll.js"></script>
-    <script src="./js/counters.js"></script>
-    <script src="./js/navigation.js"></script>
-    <script src="./js/modal.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="../js/theme-toggle.js"></script>
+    <script src="../js/particles.js"></script>
+    <script src="../js/typing.js"></script>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/counters.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

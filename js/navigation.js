@@ -21,10 +21,15 @@
     const navMenu = document.getElementById('navMenu');
     
     if (navToggle && navMenu) {
+        // Initialize aria-expanded
+        navToggle.setAttribute('aria-expanded', 'false');
+        navToggle.setAttribute('aria-controls', 'navMenu');
+        
         navToggle.addEventListener('click', () => {
-            navToggle.classList.toggle('active');
+            const isExpanded = navToggle.classList.toggle('active');
             navMenu.classList.toggle('active');
             document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+            navToggle.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
         });
         
         // Close menu on link click
@@ -34,7 +39,19 @@
                 navToggle.classList.remove('active');
                 navMenu.classList.remove('active');
                 document.body.style.overflow = '';
+                navToggle.setAttribute('aria-expanded', 'false');
             });
+        });
+        
+        // Close menu on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                navToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.style.overflow = '';
+                navToggle.setAttribute('aria-expanded', 'false');
+                navToggle.focus();
+            }
         });
     }
     
