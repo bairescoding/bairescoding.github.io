@@ -258,6 +258,8 @@
   gap: var(--space-6);
   max-width: 1200px;
   margin: 0 auto;
+  container-type: inline-size;
+  container-name: benefits;
 }
 
 .benefit-card {
@@ -401,4 +403,99 @@
               border-color var(--transition-base), 
               box-shadow var(--transition-base),
               transform var(--transition-base);
+}
+
+/* Container Queries para cards dentro de grids */
+@container benefits (max-width: 800px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .benefit-card.featured {
+    grid-column: span 2;
+  }
+}
+
+@container benefits (max-width: 500px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .benefit-card.featured {
+    grid-column: span 1;
+  }
+  
+  .benefit-card {
+    padding: var(--space-6);
+  }
+  
+  .benefit-card-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+  }
+  
+  .benefit-card-title {
+    font-size: var(--text-lg);
+  }
+}
+
+@container differences (max-width: 500px) {
+  .difference-card,
+  .service-card {
+    padding: var(--space-6);
+  }
+  
+  .card-icon {
+    font-size: 2.5rem;
+  }
+  
+  .card-title {
+    font-size: var(--text-lg);
+  }
+}
+
+@container services (max-width: 400px) {
+  .service-card {
+    padding: var(--space-5);
+  }
+  
+  .service-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+  
+  .service-title {
+    font-size: var(--text-xl);
+  }
+}
+
+/* Fallback para navegadores sin soporte de container queries */
+@supports not (container-type: inline-size) {
+  @media (max-width: 900px) {
+    .benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .benefit-card.featured {
+      grid-column: span 2;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .benefit-card.featured {
+      grid-column: span 1;
+    }
+    
+    .difference-card,
+    .service-card,
+    .benefit-card {
+      padding: var(--space-6);
+    }
+  }
 }
