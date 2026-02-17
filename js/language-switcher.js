@@ -44,12 +44,8 @@
      */
     function detectBrowserLanguage() {
         const browserLang = navigator.language || navigator.userLanguage || '';
-        // Si el navegador está en inglés, devolver EN
-        // Para cualquier otro idioma (incluyendo español), devolver EN por defecto
-        // Según los criterios: "Si el idioma comienza con 'en', redirigir a /en/"
-        // "Si el idioma es cualquier otro, mostrar la versión en español (default)"
-        // PERO también dice: "También se debe mostrar en EN si es otro idioma que no sea ES"
-        // Interpretación: ES solo si es explícitamente español, EN para todo lo demás
+        // Si el navegador está en español, devolver ES
+        // Para cualquier otro idioma, devolver EN por defecto
         if (browserLang.toLowerCase().startsWith('es')) {
             return LANG_ES;
         }
@@ -110,14 +106,13 @@
             }
         } else {
             // Cambiar a español: remover /en/ del path
-            newPath = currentPath.replace('/en/', '/').replace('/en', '/');
-            if (newPath === '/') {
-                newPath = '/';
-            }
+            newPath = currentPath.replace(/^\/en(\/|$)/, '/');
         }
         
         // Mantener hash y query params si existen
-        newPath += window.location.search + window.location.hash;
+        if (window.location.search || window.location.hash) {
+            newPath += window.location.search + window.location.hash;
+        }
         
         window.location.href = newPath;
     }
@@ -135,12 +130,10 @@
             if (textSpan) textSpan.textContent = 'ES';
             btn.setAttribute('aria-label', 'Cambiar a inglés');
             btn.setAttribute('title', 'Cambiar a inglés');
-            btn.setAttribute('aria-pressed', 'false');
         } else {
             if (textSpan) textSpan.textContent = 'EN';
             btn.setAttribute('aria-label', 'Switch to Spanish');
             btn.setAttribute('title', 'Switch to Spanish');
-            btn.setAttribute('aria-pressed', 'true');
         }
     }
     
@@ -156,9 +149,7 @@
         document.body.appendChild(announcement);
         
         setTimeout(() => {
-            if (announcement.parentNode) {
-                document.body.removeChild(announcement);
-            }
+            announcement.remove();
         }, 1000);
     }
     
