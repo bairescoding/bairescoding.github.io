@@ -273,12 +273,19 @@
    MODAL - Mobile First
    ================================================================= */
 .modal-overlay {
-  padding: var(--space-3);
+  padding: 0;
+  align-items: flex-end;
 }
 
 .modal-container {
   padding: var(--space-6);
   max-height: 85vh;
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+  transform: translateY(100%);
+}
+
+.modal-overlay.active .modal-container {
+  transform: translateY(0);
 }
 
 .modal-title {
@@ -573,6 +580,21 @@
   .email-btn {
     padding: var(--space-4) var(--space-6);
     font-size: var(--text-base);
+  }
+  
+  /* Modal Desktop */
+  .modal-overlay {
+    padding: var(--space-4);
+    align-items: center;
+  }
+  
+  .modal-container {
+    border-radius: var(--radius-xl);
+    transform: scale(0.95) translateY(20px);
+  }
+  
+  .modal-overlay.active .modal-container {
+    transform: scale(1) translateY(0);
   }
 }
 

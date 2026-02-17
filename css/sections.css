@@ -774,25 +774,3 @@
   color: var(--text-secondary);
   max-width: 300px;
 }
-
-/* Modal Responsive */
-@media (max-width: 480px) {
-  .modal-overlay {
-    padding: 0;
-    align-items: flex-end;
-  }
-  
-  .modal-container {
-    max-height: 85vh;
-    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
-    padding: var(--space-6);
-  }
-  
-  .modal-overlay.active .modal-container {
-    transform: translateY(0);
-  }
-  
-  .modal-container {
-    transform: translateY(100%);
-  }
-}
