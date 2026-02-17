@@ -1,0 +1,19 @@
+{
+  "name": "BairesCoding",
+  "short_name": "BairesCoding",
+  "icons": [
+    {
+      "src": "img/bairescoding-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/bairescoding-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#56C34F",
+  "background_color": "#030E03",
+  "display": "standalone"
+}
