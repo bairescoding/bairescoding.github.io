@@ -10,6 +10,12 @@
   /* Layout mobile-first */
   --container-padding: var(--space-4);
   --section-padding: var(--space-12);
+  
+  /* Component-specific variables */
+  --btn-max-width-mobile: 280px;
+  --pixel-grid-max-mobile: 300px;
+  --modal-max-height-mobile: 85vh;
+  --modal-max-height-desktop: 90vh;
 }
 
 /* =================================================================
@@ -22,7 +28,7 @@
 
 .nav-menu {
   position: fixed;
-  top: 70px;
+  top: var(--navbar-height);
   left: 0;
   right: 0;
   background: color-mix(in srgb, var(--bg-primary) 98%, transparent);
@@ -56,8 +62,8 @@
 }
 
 .nav-theme-toggle .theme-toggle {
-  width: 48px;
-  height: 48px;
+  width: var(--icon-2xl);
+  height: var(--icon-2xl);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +103,7 @@
 
 .btn {
   width: 100%;
-  max-width: 280px;
+  max-width: var(--btn-max-width-mobile);
 }
 
 /* =================================================================
@@ -113,7 +119,7 @@
 }
 
 .pixel-grid {
-  max-width: 300px;
+  max-width: var(--pixel-grid-max-mobile);
   margin: 0 auto;
 }
 
@@ -239,8 +245,8 @@
 .social-link {
   flex: 0 0 auto;
   min-width: auto;
-  width: 48px;
-  height: 48px;
+  width: var(--icon-2xl);
+  height: var(--icon-2xl);
   padding: 0;
   justify-content: center;
   border-radius: var(--radius-md);
@@ -270,7 +276,7 @@
 
 .modal-container {
   padding: var(--space-6);
-  max-height: 85vh;
+  max-height: var(--modal-max-height-mobile);
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
   transform: translateY(100%);
 }
@@ -379,8 +385,8 @@
   }
   
   .nav-theme-toggle .theme-toggle {
-    width: 40px;
-    height: 40px;
+    width: var(--icon-xl);
+    height: var(--icon-xl);
   }
   
   .nav-theme-toggle .theme-toggle svg {
@@ -400,7 +406,7 @@
   .hero-title {
     flex-direction: row;
     gap: var(--space-2);
-    min-height: 80px;
+    min-height: var(--card-icon-lg);
   }
   
   .hero-subtitle {
@@ -463,8 +469,8 @@
   .card-icon,
   .service-icon {
     font-size: 3rem;
-    width: 80px;
-    height: 80px;
+    width: var(--card-icon-lg);
+    height: var(--card-icon-lg);
   }
   
   /* Benefits - 3 columnas */
@@ -477,8 +483,8 @@
   }
   
   .benefit-card-icon {
-    width: 64px;
-    height: 64px;
+    width: var(--card-icon-md);
+    height: var(--card-icon-md);
     font-size: 2rem;
   }
   
@@ -489,7 +495,7 @@
   /* CTA */
   .cta-features {
     text-align: left;
-    max-width: 500px;
+    max-width: var(--container-sm);
     margin-left: auto;
     margin-right: auto;
   }

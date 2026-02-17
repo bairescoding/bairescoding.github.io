@@ -58,6 +58,43 @@
   --space-20: 5rem;
   --space-24: 6rem;
   
+  /* Spacing System Extendido */
+  --space-32: 2rem;       /* 32px */
+  --space-40: 2.5rem;     /* 40px */
+  --space-48: 3rem;       /* 48px */
+  --space-64: 4rem;       /* 64px */
+  
+  /* Aspect Ratios */
+  --ratio-square: 1 / 1;
+  --ratio-video: 16 / 9;
+  --ratio-portrait: 3 / 4;
+  --ratio-landscape: 4 / 3;
+  
+  /* Container Sizes */
+  --container-sm: 500px;
+  --container-md: 600px;
+  --container-lg: 800px;
+  --container-xl: 900px;
+  
+  /* Component Sizes */
+  --icon-sm: 20px;
+  --icon-md: 24px;
+  --icon-lg: 32px;
+  --icon-xl: 40px;
+  --icon-2xl: 48px;
+  --card-icon-sm: 56px;
+  --card-icon-md: 64px;
+  --card-icon-lg: 80px;
+  
+  /* Navigation */
+  --navbar-height: 70px;
+  --nav-toggle-size: 44px;
+  
+  /* Effects */
+  --blur-sm: 8px;
+  --blur-md: 10px;
+  --border-width-thick: 4px;
+  
   /* Layout */
   --container-max: 1200px;
   --container-padding: var(--space-6);
