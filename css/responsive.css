@@ -7,15 +7,6 @@
 
 /* Variables para mobile (base) */
 :root {
-  /* Tipografía mobile-first */
-  --text-7xl: 2.5rem;
-  --text-6xl: 2rem;
-  --text-5xl: 1.75rem;
-  --text-4xl: 1.5rem;
-  --text-3xl: 1.25rem;
-  --text-2xl: 1.125rem;
-  --text-xl: 1rem;
-  
   /* Layout mobile-first */
   --container-padding: var(--space-4);
   --section-padding: var(--space-12);
@@ -303,14 +294,6 @@
    Teléfonos grandes (iPhone Plus, etc.)
    ================================================================= */
 @media (min-width: 375px) {
-  :root {
-    --text-7xl: 2.75rem;
-    --text-6xl: 2.25rem;
-    --text-5xl: 2rem;
-    --text-4xl: 1.75rem;
-    --text-3xl: 1.5rem;
-  }
-  
   .section-tag {
     font-size: var(--text-xs);
   }
@@ -326,13 +309,6 @@
    ================================================================= */
 @media (min-width: 640px) {
   :root {
-    --text-7xl: 3rem;
-    --text-6xl: 2.5rem;
-    --text-5xl: 2rem;
-    --text-4xl: 1.75rem;
-    --text-3xl: 1.5rem;
-    --text-2xl: 1.25rem;
-    
     --container-padding: var(--space-5);
   }
   
@@ -368,14 +344,6 @@
    ================================================================= */
 @media (min-width: 768px) {
   :root {
-    --text-7xl: 3.5rem;
-    --text-6xl: 3rem;
-    --text-5xl: 2.5rem;
-    --text-4xl: 2rem;
-    --text-3xl: 1.75rem;
-    --text-2xl: 1.5rem;
-    --text-xl: 1.25rem;
-    
     --container-padding: var(--space-6);
     --section-padding: var(--space-16);
   }
@@ -604,12 +572,6 @@
    ================================================================= */
 @media (min-width: 1024px) {
   :root {
-    --text-7xl: 4rem;
-    --text-6xl: 3.5rem;
-    --text-5xl: 3rem;
-    --text-4xl: 2.25rem;
-    --text-3xl: 1.875rem;
-    
     --section-padding: var(--space-20);
   }
 }
@@ -620,11 +582,6 @@
    ================================================================= */
 @media (min-width: 1280px) {
   :root {
-    --text-7xl: 4.5rem;
-    --text-6xl: 3.75rem;
-    --text-5xl: 3rem;
-    --text-4xl: 2.25rem;
-    
     --container-padding: var(--space-6);
     --section-padding: var(--space-24);
   }
