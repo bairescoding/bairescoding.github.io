@@ -75,6 +75,21 @@
   display: block;
 }
 
+.nav-language-toggle {
+  padding: var(--space-3) 0;
+  display: flex !important;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-language-toggle .language-toggle {
+  width: var(--icon-2xl);
+  height: var(--icon-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav-cta {
   display: none;
 }
@@ -392,6 +407,18 @@
   .nav-theme-toggle .theme-toggle svg {
     width: 20px;
     height: 20px;
+  }
+  
+  .nav-language-toggle {
+    padding: 0;
+    display: flex !important;
+    justify-content: flex-start;
+    list-style: none;
+  }
+  
+  .nav-language-toggle .language-toggle {
+    width: var(--icon-xl);
+    height: var(--icon-xl);
   }
   
   .nav-cta {
