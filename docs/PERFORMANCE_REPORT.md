@@ -1,8 +1,4 @@
-# 📊 Core Web Vitals Validation Report - Issue #6
-
-## Fecha: 2025-02-16
-## Branch: feature/issue-6-responsive-images
-## Commit: f90e54c
+# 📊 Core Web Vitals Validation Report
 
 ---
 
@@ -11,7 +7,7 @@
 ### 1. Imágenes Generadas Correctamente
 
 | Archivo | Tamaño | Formato | Uso | Estado |
-|---------|--------|---------|-----|--------|
+| ------- | ------ | ------- | --- | ------ |
 | bairescoding-320.webp | 7.1 KB | WebP | Logo (móvil) | ✅ OK |
 | bairescoding-320.png | 76 KB | PNG | Fallback logo | ✅ OK |
 | bairescoding-640.webp | 14 KB | WebP | Logo (retina) | ✅ OK |
@@ -24,6 +20,7 @@
 ### 2. Implementación HTML Validada
 
 #### index.html - Logo Navbar (LCP Element)
+
 ```html
 <picture>
   <source srcset="./img/bairescoding-320.webp 320w,
@@ -40,7 +37,9 @@
        fetchpriority="high">
 </picture>
 ```
+
 ✅ **Validado:**
+
 - [x] Elemento `<picture>` con WebP source
 - [x] srcset con múltiples tamaños (320w, 640w)
 - [x] sizes correcto para 40px
@@ -49,22 +48,28 @@
 - [x] Atributos width/height (evita CLS)
 
 #### index.html - Logo Footer
+
 ```html
 <picture>
   <source srcset="./img/bairescoding-320.webp 320w" sizes="32px" type="image/webp">
   <img src="./img/bairescoding-320.png" sizes="32px" loading="lazy" width="32" height="32">
 </picture>
 ```
+
 ✅ **Validado:**
+
 - [x] lazy loading aplicado
 - [x] Tamaño apropiado (32px)
 - [x] WebP con fallback
 
 #### Meta Tags
+
 ```html
 <meta property="og:image" content="https://bairescoding.github.io/img/bairescoding-1024.webp">
 ```
+
 ✅ **Validado:**
+
 - [x] Formato WebP para meta tags
 - [x] URLs absolutas
 
@@ -75,7 +80,7 @@
 ### Ahorro de Transferencia
 
 | Métrica | Antes | Después | Mejora |
-|---------|-------|---------|--------|
+| ------- | ----- | ------- | ------ |
 | **Logo Navbar** | 238 KB (SVG) | 7.1 KB (WebP) | **97.0% ↓** |
 | **Logo Retina** | - | 14 KB (WebP) | Nuevo |
 | **OG Image** | 594 KB (PNG) | 24 KB (WebP) | **96.0% ↓** |
@@ -85,7 +90,7 @@
 ### Estimación Core Web Vitals
 
 | Métrica | Antes (Est.) | Después (Est.) | Mejora | Target |
-|---------|--------------|----------------|--------|--------|
+| ------- | ------------ | -------------- | ------ | ------ |
 | **Largest Contentful Paint (LCP)** | ~2.5s | ~1.2s | **-52%** | <2.5s ✅ |
 | **Total Blocking Time (TBT)** | ~50ms | ~30ms | **-40%** | <200ms ✅ |
 | **Cumulative Layout Shift (CLS)** | ~0.05 | ~0.0 | **-100%** | <0.1 ✅ |
@@ -93,7 +98,7 @@
 
 ### Cálculo de Ahorro Total
 
-```
+```txt
 Total imágenes críticas (antes):
 - Logo navbar: 238 KB SVG
 - OG Image: 594 KB PNG
@@ -116,7 +121,7 @@ AHORRO TOTAL: 1,037 KB (96.9% de reducción)
 ### Escenarios Validados
 
 | Viewport | Imagen Cargada | Tamaño Esperado | Formato |
-|----------|----------------|-----------------|---------|
+| -------- | -------------- | --------------- | ------- |
 | **Móvil (375px)** | bairescoding-320.webp | 7.1 KB | WebP |
 | **Tablet (768px)** | bairescoding-320.webp | 7.1 KB | WebP |
 | **Desktop (1920px)** | bairescoding-320.webp | 7.1 KB | WebP |
@@ -130,6 +135,7 @@ AHORRO TOTAL: 1,037 KB (96.9% de reducción)
 ## 🎯 Recomendaciones Adicionales
 
 ### Implementadas ✅
+
 1. ✅ Optimización de imágenes a WebP
 2. ✅ Implementar srcset con múltiples tamaños
 3. ✅ Agregar sizes correctamente
@@ -139,6 +145,7 @@ AHORRO TOTAL: 1,037 KB (96.9% de reducción)
 7. ✅ Manifest para PWA
 
 ### Para Futuras Optimizaciones (Opcional)
+
 1. Preconnect a dominio de imágenes si se usa CDN
 2. Critical CSS inline para reducir requests
 3. Precargar fuente principal si es LCP
@@ -148,7 +155,7 @@ AHORRO TOTAL: 1,037 KB (96.9% de reducción)
 ## 📋 Lighthouse Score Estimado
 
 | Categoría | Antes | Después | Cambio |
-|-----------|-------|---------|--------|
+| --------- | ----- | ------- | ------ |
 | **Performance** | 75-80 | **92-96** | +15 pts ✅ |
 | **Accessibility** | 95 | 95 | Sin cambio ✅ |
 | **Best Practices** | 100 | 100 | Sin cambio ✅ |
@@ -156,7 +163,7 @@ AHORRO TOTAL: 1,037 KB (96.9% de reducción)
 
 ### Métricas Específicas Lighthouse
 
-```
+```txt
 ANTES:
 - First Contentful Paint: 1.8s
 - Largest Contentful Paint: 2.5s
@@ -194,7 +201,7 @@ DESPUÉS (estimado):
 
 ## 🎉 Resultado Final
 
-**ESTADO: ✅ IMPLEMENTACIÓN EXITOSA**
+### **ESTADO: ✅ IMPLEMENTACIÓN EXITOSA**
 
 La implementación de imágenes responsivas con srcset ha logrado:
 
@@ -207,6 +214,3 @@ La implementación de imágenes responsivas con srcset ha logrado:
 **El PR #12 está listo para merge a main.** 🚀
 
 ---
-
-*Reporte generado por @performance-agent*
-*Issue #6 - Implementar Imágenes Responsivas con srcset*
