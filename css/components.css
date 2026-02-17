@@ -106,7 +106,7 @@
   font-size: var(--text-4xl);
   font-weight: 700;
   line-height: 1.2;
-  max-width: 600px;
+  max-width: var(--container-md);
   margin: 0 auto;
 }
 
@@ -161,8 +161,9 @@
 
 .service-icon {
   font-size: 3rem;
-  width: 80px;
-  height: 80px;
+  width: var(--card-icon-md);
+  height: var(--card-icon-md);
+  aspect-ratio: var(--ratio-square);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,7 +257,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
-  max-width: 1200px;
+  max-width: var(--container-max);
   margin: 0 auto;
   container-type: inline-size;
   container-name: benefits;
@@ -286,8 +287,9 @@
 }
 
 .benefit-card-icon {
-  width: 64px;
-  height: 64px;
+  width: var(--card-icon-lg);
+  height: var(--card-icon-lg);
+  aspect-ratio: var(--ratio-square);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -369,8 +371,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: var(--icon-xl);
+  height: var(--icon-xl);
   padding: 0;
   background: transparent;
   border: 2px solid var(--border-color);
@@ -430,8 +432,8 @@
   }
   
   .benefit-card-icon {
-    width: 48px;
-    height: 48px;
+    width: var(--icon-2xl);
+    height: var(--icon-2xl);
     font-size: 1.5rem;
   }
   
