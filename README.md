@@ -8,56 +8,76 @@ Sitio web oficial de BairesCoding - Transformamos ideas en soluciones digitales 
 ## 🚀 Tecnologías
 
 - **HTML5** - Estructura semántica y accesible
-- **CSS3** - Variables CSS, Grid, Flexbox, Animaciones
-- **JavaScript** - Vanilla JS modular
+- **CSS3** - Variables CSS, Grid, Flexbox, Animaciones, Container Queries
+- **JavaScript** - Vanilla JS modular (ES6+)
 - **Web3Forms** - Formulario de contacto sin backend
+- **GitHub Actions** - CI/CD para despliegue automático
 
 ## 📁 Estructura del Proyecto
 
 ```txt
 .
-├── index.html              # Página principal
+├── index.html              # Página principal (Español)
+├── en/
+│   └── index.html          # Versión en inglés
 ├── css/                    # Estilos CSS
-│   ├── variables.css       # Variables y temas
-│   ├── base.css           # Reset y estilos base
-│   ├── components.css     # Componentes reutilizables
-│   ├── sections.css       # Estilos de secciones
-│   ├── animations.css     # Animaciones y keyframes
-│   └── responsive.css     # Media queries
+│   ├── variables.css       # Variables CSS y temas
+│   ├── base.css            # Reset y estilos base
+│   ├── components.css      # Componentes reutilizables
+│   ├── sections.css        # Estilos de secciones
+│   ├── animations.css      # Animaciones y keyframes
+│   └── responsive.css      # Media queries y Container Queries
 ├── js/                     # JavaScript modular
-│   ├── theme-toggle.js    # Cambio de tema claro/oscuro
-│   ├── navigation.js      # Navegación y menú móvil
-│   ├── particles.js       # Efecto de partículas
-│   ├── typing.js          # Efecto de tipeo
-│   ├── scroll.js          # Scroll animations
-│   ├── counters.js        # Contadores animados
-│   ├── modal.js           # Modal de contacto
-│   └── main.js            # Inicialización
-├── img/                    # Imágenes
-│   ├── bairescoding.svg   # Logo SVG
-│   └── bairescoding.png   # Logo PNG
-├── docs/                   # Documentación
-│   ├── AGENTS.md          # Guía de agentes de IA
-│   ├── USAGE.md           # Guía de uso de skills
-│   └── i18n/              # Traducciones
+│   ├── theme-toggle.js     # Cambio de tema claro/oscuro
+│   ├── navigation.js       # Navegación y menú móvil
+│   ├── particles.js        # Efecto de partículas
+│   ├── typing.js           # Efecto de tipeo
+│   ├── scroll.js           # Scroll animations
+│   ├── counters.js         # Contadores animados
+│   ├── modal.js            # Modal de contacto
+│   └── main.js             # Inicialización
+├── img/                    # Imágenes optimizadas
+│   ├── bairescoding.svg    # Logo SVG (vectorial)
+│   ├── bairescoding.webp   # Logo WebP optimizado
+│   ├── bairescoding.png    # Logo PNG (fallback)
+│   ├── bairescoding-*.webp # Logo en múltiples tamaños (192, 320, 512, 640, 1024)
+│   ├── bairescoding-*.png  # Logo PNG en múltiples tamaños
+│   ├── apple-touch-icon.png # Icono para iOS
+│   └── favicon-32.png      # Favicon principal
+├── docs/                   # Documentación técnica
+│   ├── AGENTS.md           # Guía de agentes de IA
+│   ├── USAGE.md            # Guía de uso de skills
+│   ├── css-variables-guide.md  # Guía completa de variables CSS
+│   └── PERFORMANCE_REPORT.md   # Informe de rendimiento
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # CI/CD para GitHub Pages
 ├── .claude/
-│   └── skills.json        # Configuración de skills
-├── robots.txt             # Directivas para crawlers
-├── sitemap.xml            # Mapa del sitio
-├── SKILLS.md              # Catálogo de skills
-├── CHANGELOG.md           # Registro de cambios
-└── README.md              # Este archivo
+│   └── skills.json         # Configuración de skills
+├── site.webmanifest        # PWA manifest
+├── robots.txt              # Directivas para crawlers
+├── sitemap.xml             # Mapa del sitio multilingüe
+├── .gitignore              # Archivos ignorados por git
+├── .gitattributes          # Configuración de git
+├── SKILLS.md               # Catálogo de skills
+├── CHANGELOG.md            # Registro de cambios
+├── LICENSE                 # Licencia MIT
+└── README.md               # Este archivo
 ```
 
 ## ✨ Características
 
-- 🌓 **Tema Claro/Oscuro** - Toggle persistente con localStorage
-- 📱 **Diseño Responsive** - Optimizado para todos los dispositivos
-- ♿ **Accesibilidad** - WCAG 2.1 AA compliant
-- 🔍 **SEO Optimizado** - Schema.org, meta tags, Open Graph
-- ⚡ **Performance** - Optimizado para Core Web Vitals
-- 🎨 **Animaciones** - Efectos visuales con CSS y JS
-- 🌐 **Multilenguaje** - Soporte para español, inglés y portugués
+- 🌓 **Tema Claro/Oscuro** - Toggle persistente con localStorage y soporte para prefers-color-scheme
+- 📱 **Diseño Responsive** - Mobile-First con CSS Container Queries
+- ♿ **Accesibilidad** - WCAG 2.1 AA compliant, skip links, aria labels
+- 🔍 **SEO Optimizado** - Schema.org, meta tags, Open Graph, hreflang
+- ⚡ **Performance** - Optimizado para Core Web Vitals, imágenes WebP con srcset
+- 🎨 **Animaciones** - Efectos visuales con CSS y JS, soporte para prefers-reduced-motion
+- 🌐 **Multilenguaje** - Soporte para español e inglés (hreflang tags)
+- 🚀 **CI/CD** - Despliegue automático con GitHub Actions
+- 📦 **PWA Ready** - Web App Manifest para experiencia de app nativa
+- 🖼️ **Imágenes Responsivas** - Srcset con múltiples tamaños y formatos WebP/PNG
+- ✍️ **Tipografía Fluida** - Escalado tipográfico adaptable con clamp()
 
 ## 🛠️ Skills del Ecosistema skills.sh
 
@@ -79,8 +99,9 @@ Ver [SKILLS.md](./SKILLS.md) para el catálogo completo.
 
 ### Requisitos
 
-- Navegador moderno con soporte para ES6+
+- Navegador moderno con soporte para ES6+ y CSS Container Queries
 - Servidor local para desarrollo (Live Server, http-server, etc.)
+- Git para control de versiones
 
 ### Instalación
 
@@ -100,6 +121,14 @@ php -S localhost:8000
 ```
 
 Abrir `http://localhost:8000` en el navegador.
+
+### Despliegue
+
+El proyecto utiliza **GitHub Actions** para despliegue automático:
+
+- **Automático**: Cada push a la rama `main` despliega automáticamente a GitHub Pages
+- **URL**: [https://bairescoding.github.io](https://bairescoding.github.io)
+- **Workflow**: Ver `.github/workflows/deploy.yml`
 
 ## 🤖 Agentes de IA
 
@@ -131,13 +160,24 @@ squirrel audit https://bairescoding.github.io --format llm --coverage quick
 
 ### Targets de Calidad
 
-| Métrica | Target | Estado |
-| ------- | ------ | ------ |
-| Health Score | > 85 | ⏳ Pendiente |
-| WCAG 2.1 AA | Pass | ✅ Implementado |
-| LCP | < 2.5s | ⏳ Pendiente |
-| INP | < 200ms | ⏳ Pendiente |
-| CLS | < 0.1 | ⏳ Pendiente |
+| Métrica | Target | Estado | Notas |
+|---------|--------|--------|-------|
+| Health Score | > 85 | ✅ Implementado | Ver [PERFORMANCE_REPORT.md](./docs/PERFORMANCE_REPORT.md) |
+| WCAG 2.1 AA | Pass | ✅ Implementado | Skip links, aria labels, contraste |
+| LCP | < 2.5s | ✅ Implementado | Optimizado con srcset y fetchpriority |
+| INP | < 200ms | ⏳ Monitoreo | JavaScript modular optimizado |
+| CLS | < 0.1 | ✅ Implementado | Dimensiones explícitas en imágenes |
+| Imágenes WebP | 100% | ✅ Implementado | Con fallback PNG para compatibilidad |
+| Mobile-First CSS | Pass | ✅ Implementado | Container queries implementados |
+
+## 📚 Documentación Técnica
+
+### Guías Disponibles
+
+- **[CSS Variables Guide](./docs/css-variables-guide.md)** - Documentación completa del sistema de diseño CSS
+- **[Performance Report](./docs/PERFORMANCE_REPORT.md)** - Análisis de Core Web Vitals y optimizaciones
+- **[Agents Guide](./docs/AGENTS.md)** - Configuración y uso de agentes de IA
+- **[Skills Usage](./docs/USAGE.md)** - Guía de uso del ecosistema skills.sh
 
 ## 📝 Changelog
 

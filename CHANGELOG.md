@@ -9,11 +9,35 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-#### CSS Moderno y Responsive (#8, #9)
+#### Imágenes Responsivas (#6)
+
+- **Srcset implementation**: Múltiples tamaños de imágenes optimizadas (192, 320, 512, 640, 1024px)
+- **Formato WebP**: Imágenes en WebP con fallback a PNG para navegadores antiguos
+- **Optimización de carga**: Lazy loading y fetchpriority para imágenes críticas
+
+#### CSS Moderno y Responsive (#8, #9, #12)
 
 - **CSS Container Queries**: Implementación de container queries para componentes responsivos sin depender del viewport
 - **Tipografía fluida**: Uso de `clamp()` para escalado tipográfico fluido y adaptable
 - **Mobile-First Architecture**: Migración completa de CSS de Desktop-First a Mobile-First
+- **CSS Custom Properties**: Optimización de variables CSS con `aspect-ratio` y mejoras de rendimiento
+
+#### CI/CD y Automatización
+
+- **GitHub Actions Workflow**: Pipeline de despliegue automático para GitHub Pages
+- **Automated deployment**: Despliegue automático solo en cambios de la rama `main`
+
+#### Documentación Técnica
+
+- **Guía de Variables CSS**: Documentación completa en `docs/css-variables-guide.md`
+- **Informe de Performance**: Análisis detallado en `docs/PERFORMANCE_REPORT.md`
+- **Web App Manifest**: Configuración PWA en `site.webmanifest`
+
+#### Assets Optimizados
+
+- **Favicons múltiples**: Favicons en diferentes tamaños para todos los dispositivos
+- **Apple Touch Icon**: Icono optimizado para dispositivos iOS
+- **Logo SVG optimizado**: Versión vectorial del logo para escalado perfecto
 
 #### Configuración de Skills del Ecosistema skills.sh (#1)
 
