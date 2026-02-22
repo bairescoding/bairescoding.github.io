@@ -393,6 +393,35 @@
   height: 20px;
 }
 
+/* Language Toggle */
+.language-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--icon-xl);
+  height: var(--icon-xl);
+  padding: 0;
+  background: transparent;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-full);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.language-toggle:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.language-toggle .lang-text {
+  user-select: none;
+}
+
 /* Ensure all components transition smoothly */
 .difference-card,
 .service-card,
