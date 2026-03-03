@@ -408,6 +408,15 @@
   .benefit-card.featured {
     grid-column: span 2;
   }
+  
+  /* CTA */
+  .cta-features {
+    text-align: left;
+  }
+  
+  .cta-feature {
+    justify-content: flex-start;
+  }
 }
 
 /* =================================================================
