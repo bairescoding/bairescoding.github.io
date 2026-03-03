@@ -57,34 +57,42 @@
     const codeContent = isEnglish ? {
         keyword: 'const',
         varName: 'bairesCoding',
-        mission: 'openSource',
-        location: 'Buenos Aires',
-        reach: 'worldwide',
+        mission: 'mission',
+        missionValue: 'openSource',
+        location: 'location',
+        locationValue: 'Buenos Aires',
+        reach: 'reach',
+        reachValue: 'worldwide',
         philosophy: 'philosophy',
+        philosophyKey: 'philosophy',
         democratize: 'democratize',
         collaborate: 'collaborate',
         innovate: 'innovate'
     } : {
         keyword: 'const',
         varName: 'bairesCoding',
-        mission: 'openSource',
-        location: 'Buenos Aires',
-        reach: 'worldwide',
+        mission: 'mision',
+        missionValue: 'openSource',
+        location: 'ubicacion',
+        locationValue: 'Buenos Aires',
+        reach: 'alcance',
+        reachValue: 'worldwide',
         philosophy: 'filosofia',
+        philosophyKey: 'philosophy',
         democratize: 'democratizar',
         collaborate: 'colaborar',
         innovate: 'innovar'
     };
     
     const lineContents = [
-        `${codeContent.keyword} ${codeContent.varName} = {`,
-        `  mission: "${codeContent.mission}",`,
-        `  location: "${codeContent.location}",`,
-        `  reach: "${codeContent.reach}",`,
-        `  ${codeContent.philosophy}: {`,
-        `    ${codeContent.democratize}: true,`,
-        `    ${codeContent.collaborate}: true,`,
-        `    ${codeContent.innovate}: true`,
+        `<span class="code-keyword">${codeContent.keyword}</span> <span class="code-var">${codeContent.varName}</span> = {`,
+        `  <span class="code-property">${codeContent.mission}</span>: <span class="code-string">"${codeContent.missionValue}"</span>,`,
+        `  <span class="code-property">${codeContent.location}</span>: <span class="code-string">"${codeContent.locationValue}"</span>,`,
+        `  <span class="code-property">${codeContent.reach}</span>: <span class="code-string">"${codeContent.reachValue}"</span>,`,
+        `  <span class="code-property">${codeContent.philosophy}</span>: {`,
+        `    <span class="code-property">${codeContent.democratize}</span>: <span class="code-boolean">true</span>,`,
+        `    <span class="code-property">${codeContent.collaborate}</span>: <span class="code-boolean">true</span>,`,
+        `    <span class="code-property">${codeContent.innovate}</span>: <span class="code-boolean">true</span>`,
         `  }`,
         `};`
     ];
@@ -97,15 +105,15 @@
         line.classList.remove('typing-complete');
     });
     
-    // Animate each line with delay
+    // Animate each line with delay (slower: 600ms instead of 300ms)
     codeLines.forEach((line, index) => {
         const content = lineContents[index] || '';
-        const charCount = content.length;
+        const charCount = content.replace(/<[^>]*>/g, '').length;
         
         setTimeout(() => {
-            line.textContent = content;
-            line.style.animation = `typing ${charCount * 0.02}s steps(${charCount}, end) forwards`;
-        }, index * 300);
+            line.innerHTML = content;
+            line.style.animation = `typing ${charCount * 0.04}s steps(${charCount}, end) forwards`;
+        }, index * 600);
     });
     
     // Remove border-right after all animations complete
@@ -116,5 +124,5 @@
             line.style.whiteSpace = 'normal';
             line.style.width = '100%';
         });
-    }, codeLines.length * 300 + 500);
+    }, codeLines.length * 600 + 800);
 })();
