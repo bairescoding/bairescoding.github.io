@@ -127,11 +127,11 @@
         const textSpan = btn.querySelector('.lang-text');
         
         if (currentLang === LANG_ES) {
-            if (textSpan) textSpan.textContent = 'ES';
+            if (textSpan) textSpan.textContent = '🇺🇸 EN';
             btn.setAttribute('aria-label', 'Cambiar a inglés');
             btn.setAttribute('title', 'Cambiar a inglés');
         } else {
-            if (textSpan) textSpan.textContent = 'EN';
+            if (textSpan) textSpan.textContent = '🇪🇸 ES';
             btn.setAttribute('aria-label', 'Switch to Spanish');
             btn.setAttribute('title', 'Switch to Spanish');
         }
