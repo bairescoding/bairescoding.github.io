@@ -83,11 +83,14 @@
 }
 
 .nav-language-toggle .language-toggle {
-  width: var(--icon-2xl);
+  width: auto;
+  min-width: 60px;
   height: var(--icon-2xl);
+  padding: 0 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: var(--text-xs);
 }
 
 .nav-cta {
@@ -477,8 +480,11 @@
   }
   
   .nav-language-toggle .language-toggle {
-    width: var(--icon-xl);
+    width: auto;
+    min-width: 56px;
     height: var(--icon-xl);
+    padding: 0 8px;
+    font-size: var(--text-xs);
   }
   
   .nav-cta {
