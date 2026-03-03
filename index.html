@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BairesCoding | Transformamos ideas en soluciones digitales</title>
+    <title>BairesCoding | Código Abierto y Desarrollo a Medida</title>
     
     <!-- Meta Tags SEO -->
-    <meta name="description" content="BairesCoding - Transformamos ideas en soluciones digitales extraordinarias. Desarrollo de software a medida en Buenos Aires.">
-    <meta name="keywords" content="desarrollo software, Buenos Aires, aplicaciones web, consultoría tecnológica, IA, cloud">
+    <meta name="description" content="BairesCoding - Organización de código abierto desde Buenos Aires. Creamos herramientas y utilidades para la comunidad developer.">
+    <meta name="keywords" content="código abierto, open source, desarrollo software, herramientas, utilidades, Buenos Aires">
     <meta name="author" content="BairesCoding">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="BairesCoding | Desarrollo de Software">
-    <meta property="og:description" content="Transformamos ideas en soluciones digitales extraordinarias">
+    <meta property="og:title" content="BairesCoding | Código Abierto">
+    <meta property="og:description" content="Organización de código abierto desde Buenos Aires. Creamos herramientas y utilidades para la comunidad.">
     <meta property="og:image" content="https://bairescoding.github.io/img/bairescoding-1024.webp">
     <meta property="og:image:width" content="1024">
     <meta property="og:image:height" content="1024">
@@ -23,7 +23,7 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="BairesCoding">
-    <meta name="twitter:description" content="Transformamos ideas en soluciones digitales extraordinarias">
+    <meta name="twitter:description" content="Organización de código abierto desde Buenos Aires">
     <meta name="twitter:image" content="https://bairescoding.github.io/img/bairescoding-1024.webp">
     
     <!-- Favicon -->
@@ -34,7 +34,6 @@
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://api.web3forms.com" crossorigin>
     
     <!-- Preload critical fonts -->
     <link rel="preload" href="https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2" as="font" type="font/woff2" crossorigin>
@@ -65,7 +64,7 @@
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "BairesCoding",
-        "description": "Transformamos ideas en soluciones digitales extraordinarias. Desarrollo de software a medida en Buenos Aires.",
+        "description": "Organización de código abierto desde Buenos Aires. Creamos herramientas y utilidades para la comunidad developer.",
         "url": "https://bairescoding.github.io",
         "logo": "https://bairescoding.github.io/img/bairescoding.png",
         "sameAs": [
@@ -120,9 +119,9 @@
             
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#sobre-nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#codigo-abierto" class="nav-link">Código Abierto</a></li>
                 <li><a href="#servicios" class="nav-link">Servicios</a></li>
-                <li><a href="#diferencias" class="nav-link">Diferencias</a></li>
-                <li><a href="#por-que" class="nav-link">Por Qué Elegirnos</a></li>
                 <li><a href="#contacto" class="nav-link">Contacto</a></li>
                 <li class="nav-theme-toggle">
                     <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema" title="Cambiar tema">
@@ -149,7 +148,7 @@
                 </li>
             </ul>
             
-            <button class="btn btn-primary nav-cta" data-modal="contact">Contactar</button>
+            <a href="#contacto" class="btn btn-primary nav-cta">Contactar</a>
         </div>
     </nav>
 
@@ -158,22 +157,41 @@
         <canvas id="particles-canvas" class="particles-canvas"></canvas>
         
         <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="typing-text"></span><span class="cursor-blink">_</span>
-            </h1>
+            <div class="hero-logo">
+                <img src="./img/bairescoding.svg" alt="BairesCoding" class="hero-logo-img" width="250" height="250">
+            </div>
             
-            <p class="hero-subtitle">Transformamos ideas en soluciones digitales extraordinarias</p>
+            <div class="hero-badges">
+                <a href="https://bairescoding.github.io" target="_blank" rel="noopener" class="badge-link">
+                    <span class="badge-icon">🌐</span>
+                    <span>Website</span>
+                </a>
+                <a href="https://linkedin.com/company/bairescoding" target="_blank" rel="noopener" class="badge-link">
+                    <span class="badge-icon">🔗</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://instagram.com/bairescoding" target="_blank" rel="noopener" class="badge-link">
+                    <span class="badge-icon">📸</span>
+                    <span>Instagram</span>
+                </a>
+                <a href="mailto:bairescoding@outlook.com" class="badge-link">
+                    <span class="badge-icon">📧</span>
+                    <span>Email</span>
+                </a>
+            </div>
+            
+            <p class="hero-subtitle">Código abierto desde Buenos Aires para el mundo 🌍</p>
             
             <div class="hero-buttons">
-                <a href="#servicios" class="btn btn-primary btn-glow">
-                    <span>Ver Servicios</span>
+                <a href="#codigo-abierto" class="btn btn-primary btn-glow">
+                    <span>Explorar Proyectos</span>
                     <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M5 12h14M12 5l7 7-7 7"/>
                     </svg>
                 </a>
-                <button class="btn btn-outline" data-modal="contact">
+                <a href="#contacto" class="btn btn-outline">
                     <span>Contactar</span>
-                </button>
+                </a>
             </div>
         </div>
     </section>
@@ -183,71 +201,69 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-visual">
-                    <div class="pixel-grid">
-                        <div class="pixel-item" data-delay="0">💻</div>
-                        <div class="pixel-item" data-delay="100">🚀</div>
-                        <div class="pixel-item" data-delay="200">🌐</div>
-                        <div class="pixel-item" data-delay="300">⚡</div>
-                        <div class="pixel-item" data-delay="400">🔧</div>
-                        <div class="pixel-item" data-delay="500">📊</div>
-                        <div class="pixel-item" data-delay="600">🎯</div>
-                        <div class="pixel-item" data-delay="700">💡</div>
-                        <div class="pixel-item" data-delay="800">🔒</div>
-                    </div>
-                    <div class="location-badge">
-                        <span class="location-dot"></span>
-                        <span class="location-text">Buenos Aires</span>
-                        <svg class="location-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                        <span class="location-dest">Mundo</span>
+                    <div class="code-visual">
+                        <div class="code-line"><span class="code-keyword">const</span> <span class="code-var">bairesCoding</span> = {</div>
+                        <div class="code-line"><span class="code-property">  mission</span>: <span class="code-string">"openSource"</span>,</div>
+                        <div class="code-line"><span class="code-property">  location</span>: <span class="code-string">"Buenos Aires"</span>,</div>
+                        <div class="code-line"><span class="code-property">  reach</span>: <span class="code-string">"worldwide"</span>,</div>
+                        <div class="code-line"><span class="code-property">  philosophy</span>: {</div>
+                        <div class="code-line"><span class="code-property">    democratize</span>: <span class="code-boolean">true</span>,</div>
+                        <div class="code-line"><span class="code-property">    collaborate</span>: <span class="code-boolean">true</span>,</div>
+                        <div class="code-line"><span class="code-property">    innovate</span>: <span class="code-boolean">true</span></div>
+                        <div class="code-line">  }</div>
+                        <div class="code-line">};</div>
                     </div>
                 </div>
                 
                 <div class="about-content">
                     <span class="section-tag">🚀 Sobre Nosotros</span>
-                    <h2 class="section-title">Más que código, <span class="highlight">soluciones</span></h2>
+                    <h2 class="section-title">Nuestra <span class="highlight">Organización</span></h2>
                     <p class="about-text">
-                        En <strong>BairesCoding</strong>, creemos que el código es más que solo tecnología: es el puente que conecta las ambiciones de tu empresa con el éxito real.
+                        En <strong>BairesCoding</strong>, nos dedicamos a aportar valor a la comunidad mediante el desarrollo de software libre.
                     </p>
                     <p class="about-text">
-                        Somos un equipo apasionado de desarrolladores, diseñadores y estrategas digitales con sede en Buenos Aires, comprometidos con crear soluciones tecnológicas que generan impacto medible.
+                        Nuestro objetivo es crear utilidades, herramientas y funcionalidades prácticas que estén disponibles para el uso general, simplificando procesos y fomentando el desarrollo colaborativo.
                     </p>
                     <div class="mission-box">
-                        <span class="mission-label">Nuestra misión</span>
-                        <p class="mission-text">Democratizar el acceso a tecnología de clase mundial para empresas de todos los tamaños, sin importar su ubicación geográfica.</p>
+                        <span class="mission-label">Nuestra filosofía</span>
+                        <p class="mission-text">Creemos en la democratización del código y en construir soluciones que puedan ser utilizadas, auditadas y mejoradas por desarrolladores de todo el mundo.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Differences Section -->
-    <section class="section differences" id="diferencias">
+    <!-- Open Source Section -->
+    <section class="section open-source" id="codigo-abierto">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Lo Que Nos Hace Diferentes</span>
-                <h2 class="section-title">No somos solo otro <span class="highlight">proveedor</span></h2>
+                <span class="section-tag">🤝 Código Abierto y Colaboración</span>
+                <h2 class="section-title">Construyendo <span class="highlight">juntos</span></h2>
+                <p class="section-description">Nuestros repositorios públicos están abiertos a la comunidad. Te invitamos a participar.</p>
             </div>
             
-            <div class="differences-grid">
-                <div class="difference-card" data-aos="fade-up" data-delay="0">
-                    <div class="card-icon">🎯</div>
-                    <h3 class="card-title">Enfoque en Resultados</h3>
-                    <p class="card-text">No solo escribimos código, resolvemos problemas de negocio reales. Cada línea tiene un propósito claro.</p>
+            <div class="contribute-grid">
+                <div class="contribute-card" data-aos="fade-up" data-delay="0">
+                    <div class="contribute-icon">🔍</div>
+                    <h3 class="contribute-title">Explorar el Código</h3>
+                    <p class="contribute-text">Reutiliza nuestras herramientas y librerías en tus propios proyectos. Todo nuestro código está disponible para ti.</p>
                 </div>
                 
-                <div class="difference-card" data-aos="fade-up" data-delay="100">
-                    <div class="card-icon">🤝</div>
-                    <h3 class="card-title">Partnership Estratégico</h3>
-                    <p class="card-text">Nos convertimos en aliados de tu crecimiento, no solo proveedores. Tu éxito es nuestro éxito.</p>
+                <div class="contribute-card" data-aos="fade-up" data-delay="100">
+                    <div class="contribute-icon">🐛</div>
+                    <h3 class="contribute-title">Reportar Issues</h3>
+                    <p class="contribute-text">Si encuentras un error o tienes una sugerencia de mejora, abre un issue en el repositorio correspondiente.</p>
                 </div>
                 
-                <div class="difference-card" data-aos="fade-up" data-delay="200">
-                    <div class="card-icon">🔒</div>
-                    <h3 class="card-title">Calidad Garantizada</h3>
-                    <p class="card-text">Cada línea de código cumple con los más altos estándares internacionales de calidad y seguridad.</p>
+                <div class="contribute-card" data-aos="fade-up" data-delay="200">
+                    <div class="contribute-icon">📥</div>
+                    <h3 class="contribute-title">Proponer Pull Requests</h3>
+                    <p class="contribute-text">Aceptamos contribuciones que aporten valor a los proyectos existentes. Tu código puede hacer la diferencia.</p>
                 </div>
+            </div>
+            
+            <div class="contribute-cta">
+                <p>Para más información, revisa nuestra <a href="https://bairescoding.github.io/.github/contributing" target="_blank" rel="noopener">Guía de Contribución</a></p>
             </div>
         </div>
     </section>
@@ -256,131 +272,52 @@
     <section class="section services" id="servicios">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">🛠️ Nuestros Servicios</span>
-                <h2 class="section-title">Soluciones <span class="highlight">a tu medida</span></h2>
+                <span class="section-tag">💼 Soporte y Desarrollo a Medida</span>
+                <h2 class="section-title">Soluciones <span class="highlight">empresariales</span></h2>
+                <p class="section-description">理解emos que los entornos empresariales requieren soluciones específicas. Por eso, ofrecemos servicios comerciales.</p>
             </div>
             
             <div class="services-grid">
-                <!-- Featured Service -->
-                <div class="service-card featured" data-aos="fade-up">
-                    <div class="service-header">
-                        <div class="service-icon">💻</div>
-                        <h3 class="service-title">Desarrollo de Software a Medida</h3>
-                    </div>
+                <div class="service-card" data-aos="fade-up" data-delay="0">
+                    <div class="service-icon">🛠️</div>
+                    <h3 class="service-title">Soporte Técnico Dedicado</h3>
                     <ul class="service-list">
-                        <li><span class="check">✓</span> Aplicaciones web modernas y escalables</li>
-                        <li><span class="check">✓</span> Sistemas empresariales robustos</li>
-                        <li><span class="check">✓</span> APIs y microservicios</li>
-                        <li><span class="check">✓</span> Migración y modernización de legacy systems</li>
+                        <li><span class="check">✓</span> Asistencia prioritaria para implementación</li>
+                        <li><span class="check">✓</span> Mantenimiento de herramientas Open Source</li>
+                        <li><span class="check">✓</span> Soporte en tu infraestructura</li>
                     </ul>
                 </div>
                 
                 <div class="service-card" data-aos="fade-up" data-delay="100">
-                    <div class="service-icon">📱</div>
-                    <h3 class="service-title">Soluciones Robustas</h3>
+                    <div class="service-icon">⚙️</div>
+                    <h3 class="service-title">Desarrollo de Funcionalidades</h3>
                     <ul class="service-list">
-                        <li><span class="check">✓</span> Aplicaciones multiplataforma</li>
-                        <li><span class="check">✓</span> Soluciones híbridas optimizadas</li>
+                        <li><span class="check">✓</span> Creación de módulos específicos</li>
+                        <li><span class="check">✓</span> Características personalizadas</li>
+                        <li><span class="check">✓</span> Extensiones sobre nuestro código base</li>
                     </ul>
                 </div>
                 
                 <div class="service-card" data-aos="fade-up" data-delay="200">
-                    <div class="service-icon">☁️</div>
-                    <h3 class="service-title">Arquitectura & Cloud</h3>
+                    <div class="service-icon">🔗</div>
+                    <h3 class="service-title">Integración a Medida</h3>
                     <ul class="service-list">
-                        <li><span class="check">✓</span> Diseño de arquitecturas cloud-native</li>
-                        <li><span class="check">✓</span> Implementación en AWS, Azure, GCP</li>
-                        <li><span class="check">✓</span> DevOps y CI/CD</li>
-                        <li><span class="check">✓</span> Optimización de infraestructura</li>
+                        <li><span class="check">✓</span> Adaptación a tus sistemas actuales</li>
+                        <li><span class="check">✓</span> Integración con APIs</li>
+                        <li><span class="check">✓</span> Conexión con microservicios</li>
+                        <li><span class="check">✓</span> Integración con bases de datos</li>
                     </ul>
                 </div>
                 
-                <div class="service-card" data-aos="fade-up" data-delay="300">
+                <div class="service-card featured" data-aos="fade-up" data-delay="300">
                     <div class="service-icon">💡</div>
                     <h3 class="service-title">Consultoría Tecnológica</h3>
                     <ul class="service-list">
-                        <li><span class="check">✓</span> Roadmap de transformación digital</li>
-                        <li><span class="check">✓</span> Selección de tecnologías óptimas</li>
-                        <li><span class="check">✓</span> Capacitación de equipos</li>
+                        <li><span class="check">✓</span> Asesoramiento en arquitectura de software</li>
+                        <li><span class="check">✓</span> Selección de herramientas óptimas</li>
+                        <li><span class="check">✓</span> Implementación de soluciones</li>
+                        <li><span class="check">✓</span> Guía en transformación digital</li>
                     </ul>
-                </div>
-                
-                <div class="service-card" data-aos="fade-up" data-delay="400">
-                    <div class="service-icon">🤖</div>
-                    <h3 class="service-title">Inteligencia Artificial & Data</h3>
-                    <ul class="service-list">
-                        <li><span class="check">✓</span> Implementación de soluciones de IA/ML</li>
-                        <li><span class="check">✓</span> Análisis de datos y BI</li>
-                        <li><span class="check">✓</span> Automatización inteligente</li>
-                        <li><span class="check">✓</span> Chatbots y asistentes virtuales</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us Section -->
-    <section class="section why-choose" id="por-que">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">📊 Por Qué Elegirnos</span>
-                <h2 class="section-title">Beneficios <span class="highlight">reales</span></h2>
-            </div>
-            
-            <div class="benefits-grid">
-                <div class="benefit-card" data-aos="fade-up" data-delay="0">
-                    <div class="benefit-card-icon">⏱️</div>
-                    <div class="benefit-card-content">
-                        <h3 class="benefit-card-title">Time-to-Market</h3>
-                        <p class="benefit-card-desc">Lanzamos MVPs en semanas, no meses</p>
-                        <div class="benefit-card-stat">
-                            <span class="stat-number" data-target="80">0</span>
-                            <span class="stat-suffix">% más rápido</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="benefit-card" data-aos="fade-up" data-delay="100">
-                    <div class="benefit-card-icon">💰</div>
-                    <div class="benefit-card-content">
-                        <h3 class="benefit-card-title">Costo-Eficiencia</h3>
-                        <p class="benefit-card-desc">Equipo senior a costos competitivos LATAM</p>
-                        <div class="benefit-card-stat">
-                            <span class="stat-number" data-target="70">0</span>
-                            <span class="stat-suffix">% ahorro</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="benefit-card" data-aos="fade-up" data-delay="200">
-                    <div class="benefit-card-icon">🔄</div>
-                    <div class="benefit-card-content">
-                        <h3 class="benefit-card-title">Escalabilidad</h3>
-                        <p class="benefit-card-desc">Soluciones pensadas para crecer contigo</p>
-                        <div class="benefit-card-badge">Cloud-native</div>
-                    </div>
-                </div>
-                
-                <div class="benefit-card" data-aos="fade-up" data-delay="300">
-                    <div class="benefit-card-icon">🛡️</div>
-                    <div class="benefit-card-content">
-                        <h3 class="benefit-card-title">Seguridad</h3>
-                        <p class="benefit-card-desc">Cumplimiento de estándares internacionales</p>
-                        <div class="benefit-card-badge">ISO 27001</div>
-                    </div>
-                </div>
-                
-                <div class="benefit-card featured" data-aos="fade-up" data-delay="400">
-                    <div class="benefit-card-icon">📈</div>
-                    <div class="benefit-card-content">
-                        <h3 class="benefit-card-title">ROI Medible</h3>
-                        <p class="benefit-card-desc">Métricas claras de impacto en tu negocio. Cada proyecto incluye dashboard de KPIs para que puedas medir el retorno de inversión en tiempo real.</p>
-                        <div class="benefit-card-features">
-                            <span class="feature-tag">KPIs en tiempo real</span>
-                            <span class="feature-tag">Dashboards personalizados</span>
-                            <span class="feature-tag">Reportes automáticos</span>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -391,33 +328,27 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-main">
-                    <h2 class="footer-title">¿Listo Para Transformar Tu Negocio?</h2>
-                    <p class="footer-subtitle">Tu próxima gran idea no tiene que quedarse en el papel</p>
+                    <h2 class="footer-title">¿Necesitás soporte o desarrollo a medida?</h2>
+                    <p class="footer-subtitle">Escribinos para coordinar una reunión y evaluar cómo podemos colaborar con tu empresa.</p>
                     
                     <div class="cta-features">
                         <div class="cta-feature">
                             <span class="feature-check">✓</span>
-                            <span>Experiencia comprobada en múltiples industrias</span>
+                            <span>Equipo con experiencia en múltiples tecnologías</span>
                         </div>
                         <div class="cta-feature">
                             <span class="feature-check">✓</span>
-                            <span>Tecnologías de vanguardia</span>
+                            <span>Compromiso con la calidad del código</span>
                         </div>
                         <div class="cta-feature">
                             <span class="feature-check">✓</span>
-                            <span>Compromiso absoluto con tus objetivos</span>
-                        </div>
-                        <div class="cta-feature">
-                            <span class="feature-check">✓</span>
-                            <span>Flexibilidad para adaptarnos a tu ritmo</span>
+                            <span>Flexibilidad para adaptarnos a tus necesidades</span>
                         </div>
                     </div>
                     
-                    <p class="footer-text">No importa en qué etapa esté tu proyecto, desde una idea inicial hasta la necesidad de escalar una plataforma existente, tenemos la experiencia y el equipo para hacerlo realidad.</p>
-                    
-                    <button class="btn btn-cta btn-glow-large" data-modal="contact">
+                    <a href="mailto:bairescoding@outlook.com" class="btn btn-cta btn-glow-large">
                         <span>🚀 Iniciar Proyecto</span>
-                    </button>
+                    </a>
                 </div>
                 
                 <div class="social-links">
@@ -459,7 +390,7 @@
                     </picture>
                     <div class="brand-text">
                         <strong>BairesCoding</strong>
-                        <span>• Innovación, Código y Resultados</span>
+                        <span>• Código Abierto</span>
                     </div>
                 </div>
                 <p class="footer-tagline">Desde Buenos Aires para el mundo 🌍</p>
@@ -475,81 +406,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Contact Modal -->
-    <div class="modal-overlay" id="contactModal" aria-hidden="true">
-        <div class="modal-container">
-            <button class="modal-close" id="modalClose" aria-label="Cerrar">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M18 6L6 18M6 6l12 12"/>
-                </svg>
-            </button>
-            
-            <div class="modal-header">
-                <h2 class="modal-title">Contactar</h2>
-                <p class="modal-subtitle">¿Tienes un proyecto en mente? Hablemos.</p>
-            </div>
-            
-            <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-                <!-- Web3Forms Access Key -->
-                <input type="hidden" name="access_key" value="72985457-00e2-4114-bedc-c545d1341f6a">
-                <input type="hidden" name="subject" value="Nuevo contacto desde BairesCoding">
-                <input type="hidden" name="from_name" value="BairesCoding Website">
-                
-                <!-- Honeypot Spam Protection -->
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                
-                <div class="form-group">
-                    <label for="name" class="form-label">Nombre *</label>
-                    <input type="text" id="name" name="name" class="form-input" required placeholder="Tu nombre">
-                </div>
-                
-                <div class="form-group">
-                    <label for="email" class="form-label">Email *</label>
-                    <input type="email" id="email" name="email" class="form-input" required placeholder="tu@email.com">
-                </div>
-                
-                <div class="form-group">
-                    <label for="company" class="form-label">Empresa</label>
-                    <input type="text" id="company" name="company" class="form-input" placeholder="Nombre de tu empresa (opcional)">
-                </div>
-                
-                <div class="form-group">
-                    <label for="project-type" class="form-label">Tipo de Proyecto</label>
-                    <select id="project-type" name="project_type" class="form-select">
-                        <option value="">Selecciona una opción</option>
-                        <option value="web">Desarrollo Web</option>
-                        <option value="mobile">App Mobile</option>
-                        <option value="consultoria">Consultoría Tecnológica</option>
-                        <option value="ia">Inteligencia Artificial & Data</option>
-                        <option value="cloud">Arquitectura & Cloud</option>
-                        <option value="otro">Otro</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message" class="form-label">Mensaje *</label>
-                    <textarea id="message" name="message" class="form-textarea" rows="4" required placeholder="Cuéntanos sobre tu proyecto..."></textarea>
-                </div>
-                
-                <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
-                    <span class="btn-text">Enviar mensaje</span>
-                    <span class="btn-loader" style="display: none;">
-                        <svg class="spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" stroke-dasharray="60" stroke-dashoffset="10"/>
-                        </svg>
-                    </span>
-                </button>
-            </form>
-            
-            <!-- Success Message -->
-            <div class="success-message" id="successMessage" style="display: none;">
-                <div class="success-icon">✓</div>
-                <h3 class="success-title">¡Mensaje enviado!</h3>
-                <p class="success-text">Gracias por contactarnos. Te responderemos pronto.</p>
-            </div>
-        </div>
-    </div>
 
     <!-- JavaScript -->
     <script src="./js/theme-toggle.js"></script>

@@ -101,6 +101,25 @@
   padding: var(--space-16) var(--space-4);
 }
 
+.hero-logo {
+  margin-bottom: var(--space-6);
+}
+
+.hero-logo-img {
+  width: clamp(120px, 40vw, 200px);
+  height: clamp(120px, 40vw, 200px);
+}
+
+.hero-badges {
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.badge-link {
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-xs);
+}
+
 .hero-title {
   flex-direction: column;
   gap: 0;
@@ -151,6 +170,29 @@
 
 .difference-card {
   padding: var(--space-5);
+}
+
+/* =================================================================
+   OPEN SOURCE SECTION - Mobile First
+   ================================================================= */
+.contribute-grid {
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.contribute-card {
+  padding: var(--space-5);
+}
+
+.contribute-icon {
+  font-size: var(--text-3xl);
+}
+
+/* Code Visual - Mobile */
+.code-visual {
+  padding: var(--space-4);
+  font-size: var(--text-xs);
+  max-width: 100%;
 }
 
 /* =================================================================
@@ -349,6 +391,11 @@
     margin: 0 auto;
   }
   
+  /* Contribute Grid - 2 columnas */
+  .contribute-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
   /* Benefits Grid - 2 columnas */
   .benefits-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -477,6 +524,15 @@
   }
   
   .difference-card {
+    padding: var(--space-8);
+  }
+  
+  /* Contribute - 3 columnas */
+  .contribute-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .contribute-card {
     padding: var(--space-8);
   }
   
