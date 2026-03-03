@@ -317,9 +317,9 @@
                         </div>
                     </div>
                     
-                    <a href="mailto:bairescoding@outlook.com" class="btn btn-cta btn-glow-large">
+                    <button class="btn btn-cta btn-glow-large" data-modal="contact">
                         <span>🚀 Start Project</span>
-                    </a>
+                    </button>
                 </div>
                 
                 <div class="social-links">
@@ -370,6 +370,78 @@
             </div>
         </div>
     </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal-overlay" id="contactModal" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose" aria-label="Close">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18M6 6l12 12"/>
+                </svg>
+            </button>
+            
+            <div class="modal-header">
+                <h2 class="modal-title">Contact Us</h2>
+                <p class="modal-subtitle">Do you have a project in mind? Let's talk.</p>
+            </div>
+            
+            <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="72985457-00e2-4114-bedc-c545d1341f6a">
+                <input type="hidden" name="subject" value="New contact from BairesCoding">
+                <input type="hidden" name="from_name" value="BairesCoding Website">
+                
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                
+                <div class="form-group">
+                    <label for="name" class="form-label">Name *</label>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder="Your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" id="email" name="email" class="form-input" required placeholder="your@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="company" class="form-label">Company</label>
+                    <input type="text" id="company" name="company" class="form-input" placeholder="Your company name (optional)">
+                </div>
+                
+                <div class="form-group">
+                    <label for="project-type" class="form-label">Project Type</label>
+                    <select id="project-type" name="project_type" class="form-select">
+                        <option value="">Select an option</option>
+                        <option value="web">Web Development</option>
+                        <option value="mobile">Mobile App</option>
+                        <option value="consultoria">Technology Consulting</option>
+                        <option value="ia">Artificial Intelligence & Data</option>
+                        <option value="cloud">Architecture & Cloud</option>
+                        <option value="otro">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label">Message *</label>
+                    <textarea id="message" name="message" class="form-textarea" rows="4" required placeholder="Tell us about your project..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                    <span class="btn-text">Send message</span>
+                    <span class="btn-loader" style="display: none;">
+                        <svg class="spinner" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10" stroke-dasharray="60" stroke-dashoffset="10"/>
+                        </svg>
+                    </span>
+                </button>
+            </form>
+            
+            <div class="success-message" id="successMessage" style="display: none;">
+                <div class="success-icon">✓</div>
+                <h3 class="success-title">Message sent!</h3>
+                <p class="success-text">Thank you for contacting us. We will respond soon.</p>
+            </div>
+        </div>
+    </div>
 
     <!-- JavaScript -->
     <script src="../js/theme-toggle.js"></script>
