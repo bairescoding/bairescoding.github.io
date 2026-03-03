@@ -246,12 +246,12 @@
    CTA SECTION - Mobile First
    ================================================================= */
 .cta-features {
-  text-align: center;
+  text-align: left;
   max-width: 100%;
 }
 
 .cta-feature {
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .btn-cta {
