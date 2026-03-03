@@ -76,16 +76,21 @@
         btnLoader.style.display = 'block';
         
         const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
         
         try {
             const response = await fetch(form.action, {
                 method: 'POST',
-                body: formData
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(data)
             });
             
             const result = await response.json();
             
-            if (response.ok && (result.success || response.ok)) {
+            if (response.ok && result.success) {
                 // Show success message
                 form.style.display = 'none';
                 successMessage.style.display = 'flex';
@@ -107,15 +112,4 @@
             btnLoader.style.display = 'none';
         }
     });
-    
-    // Reset button text based on language
-    function updateButtonText() {
-        const isEnglish = window.location.pathname.includes('/en/');
-        if (submitBtn && btnText) {
-            btnText.textContent = isEnglish ? 'Send message' : 'Enviar mensaje';
-        }
-    }
-    
-    // Run on load
-    updateButtonText();
 })();
