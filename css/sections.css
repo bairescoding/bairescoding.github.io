@@ -205,6 +205,11 @@
   letter-spacing: 0.05em;
 }
 
+.hero-logo-text .cursor {
+  font-size: 0.6em;
+  vertical-align: middle;
+}
+
 .hero-badges {
   display: flex;
   flex-wrap: wrap;
