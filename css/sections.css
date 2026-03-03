@@ -198,10 +198,11 @@
   margin-bottom: var(--space-8);
 }
 
-.hero-logo-img {
-  width: clamp(150px, 30vw, 250px);
-  height: clamp(150px, 30vw, 250px);
-  object-fit: contain;
+.hero-logo-text {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  color: var(--text-primary);
+  letter-spacing: 0.05em;
 }
 
 .hero-badges {
