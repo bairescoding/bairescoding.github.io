@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#030e03">
+<meta name="description" content="BairesCoding. Estamos construyendo una nueva experiencia. Volvemos pronto.">
+<title>BairesCoding — Under Construction</title>
+<style>
+:root{color-scheme:dark;--bg:#030e03;--text:#f1f3e9;--muted:#a6b2a8;--accent:#56c34f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;min-height:100svh}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 85% 45%,#283e2759,transparent 55%)}
+.shell{position:relative;max-width:1440px;margin:auto;padding:38px 6vw 28px;min-height:100svh;display:flex;flex-direction:column}
+header,footer{display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-size:23px;letter-spacing:-1px;font-weight:700}.brand span{color:var(--accent)}.location,.eyebrow,footer,.label{font:12px/1.6 "Courier New",monospace;letter-spacing:1px}.location{color:var(--muted)}
+main{flex:1;display:grid;grid-template-columns:1.3fr 1fr;align-items:center;gap:5vw;padding:85px 0}
+.status{display:inline-flex;align-items:center;gap:10px;border:1px solid #465344;border-radius:30px;padding:9px 14px;color:var(--accent);font:11px/1.4 "Courier New",monospace;letter-spacing:1.2px}
+.dot{width:6px;height:6px;background:var(--accent);border-radius:50%}
+h1{font-size:clamp(54px,7.5vw,108px);line-height:.98;letter-spacing:-.065em;font-weight:500;margin:29px 0}h1 span{color:var(--accent)}
+.intro{color:var(--muted);font-size:17px;line-height:1.75;max-width:390px;margin:0}.eyebrow{margin-top:38px;color:var(--text)}
+.art{aspect-ratio:1;position:relative;display:grid;place-items:center;border:1px solid #314031;border-radius:50%;background:radial-gradient(circle,#27362144,transparent 65%)}
+.art:before,.art:after{content:"";position:absolute;inset:13%;border:1px solid #3b4b36;border-radius:50%}.art:after{inset:28%;border-style:dashed;transform:rotate(25deg)}
+.cross{position:absolute;width:100%;height:1px;background:#314031;transform:rotate(-35deg)}.cross.second{transform:rotate(55deg)}
+.symbol{z-index:1;font:clamp(72px,10vw,150px)/1 "Courier New",monospace;letter-spacing:-.17em;padding-right:.17em;color:var(--accent);text-shadow:0 0 65px #b7fa6b2b;transform:rotate(-10deg)}
+.label{position:absolute;bottom:9%;right:-2%;background:var(--accent);color:#182313;padding:7px 12px;letter-spacing:0;font-weight:bold;transform:rotate(-8deg)}
+footer{border-top:1px solid #314031;padding-top:22px;color:var(--muted);font-size:11px;letter-spacing:.2px}.footer-note{color:var(--accent)}
+@media(max-width:760px){.shell{padding:28px 7vw 24px}.location{font-size:10px}.brand{font-size:20px}main{grid-template-columns:1fr;padding:65px 0 45px;gap:45px}h1{font-size:clamp(54px,12vw,84px)}.art{width:75%;max-width:320px;justify-self:center}.symbol{font-size:95px}.intro{font-size:16px}.eyebrow{margin-top:26px}footer{align-items:flex-start;flex-direction:column;gap:8px}}
+.logo-panel{display:grid;place-items:center}.logo{display:block;width:100%;max-width:460px;height:auto;border-radius:24px}@media(max-width:760px){.logo{max-width:320px}}
+</style>
+</head>
+<body>
+<div class="shell">
+<header><div class="brand">baires<span>coding</span><span aria-hidden="true">.</span></div><div class="location">BUENOS AIRES, ARGENTINA</div></header>
+<main>
+<section aria-labelledby="title">
+<div class="status"><span class="dot" aria-hidden="true"></span>SITIO EN CONSTRUCCIÓN</div>
+<h1 id="title" lang="en">Under<br><span>Construction.</span></h1>
+<p class="intro">Estamos construyendo una nueva experiencia.<br>Un nuevo comienzo, con la misma curiosidad por crear.</p>
+<p class="eyebrow">NOS VEMOS PRONTO ↗</p>
+</section>
+<div class="logo-panel"><img class="logo" src="bairescoding.svg" alt="BairesCoding" width="1024" height="1024"></div>
+</main>
+<footer><span>© BairesCoding</span><span class="footer-note">El próximo capítulo está en desarrollo.</span></footer>
+</div>
+</body>
+</html>
+
